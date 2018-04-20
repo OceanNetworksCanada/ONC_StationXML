@@ -86,6 +86,12 @@ Calibrations :
     NS : "already_calibrated" #north-south
     UD : "already_calibrated" #up-down/vertical
 
+  # Nanometrics Trillium 120 s PH (S/N U1364A)
+  "U1364A" : #acceleration
+    EW : "already_calibrated" #east-west
+    NS : "already_calibrated" #north-south
+    UD : "already_calibrated" #up-down/vertical
+
   ############################ DATALOGGERS ############################
   
   #REFTEKs !@# Set to "1", because all that is needed is the standard coefficients from NRL.
@@ -127,6 +133,13 @@ Calibrations :
       UD : "already_calibrated" #up-down/vertical
   "143" :
     "TitanEA3_5" : 
+      EW : "already_calibrated" #east-west
+      NS : "already_calibrated" #north-south
+      UD : "already_calibrated" #up-down/vertical
+
+  # Quanterra 330
+  "Q330":
+    "T120PH" :
       EW : "already_calibrated" #east-west
       NS : "already_calibrated" #north-south
       UD : "already_calibrated" #up-down/vertical
