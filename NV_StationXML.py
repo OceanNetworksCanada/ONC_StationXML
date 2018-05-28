@@ -24,7 +24,6 @@ def get_response(_sensor_resp_filename, _dl_resp_filename):
     _sensor_resp = read_inventory(r'_sensorRESP\{}.txt'.format(_sensor_resp_filename), format='RESP')[0][0][0].response
     _dl_resp.response_stages.pop(0)
     _dl_resp.response_stages.insert(0, _sensor_resp.response_stages[0])
-    _dl_resp.instrument_sensitivity.input_units = _sensor_resp.instrument_sensitivity.input_units
     _response = _dl_resp
     
     #special condition for SA ULN 40 Vpg
@@ -113,7 +112,6 @@ for network in bank['Networks'].keys():
 
                         #apply sensor calibrations from manufacturer sheets
                         _sc = calibrations['Calibrations'][Channels[channel]["_equipment_serial"][0]]
-
                         if (_sc['EW'] and _sc['NS'] and _sc['UD']) != "already_calibrated":
                         
                             if _channel_code.endswith('E') or _channel_code.endswith('2'):
@@ -127,7 +125,6 @@ for network in bank['Networks'].keys():
                         
                         #apply digitizer/datalogger calibrations from manufacturer sheets
                         _dc = calibrations['Calibrations'][Channels[channel]["_equipment_serial"][1]][Channels[channel]["_sensor_type"]]
-
                         if (_dc['EW'] and _dc['NS'] and _dc['UD']) != "already_calibrated":
                         
                             if _channel_code.endswith('E') or _channel_code.endswith('2'):
@@ -140,7 +137,7 @@ for network in bank['Networks'].keys():
                             _response.response_stages[2].stage_gain = _datalogger_calibs
                             
                         _response.recalculate_overall_sensitivity()
-
+                        
                         # Construct the channel; these are the channel attributes that need to be specified, or left empty "" if not known.
                         try:
                             #take lat, lon, elev from Channels if it's defined (same station, different Location)
@@ -152,9 +149,8 @@ for network in bank['Networks'].keys():
                             lat = Stations[station]["_latitude"]
                             lon = Stations[station]["_longitude"]
                             elev = Stations[station]["_elevation"]
-
+                        
                         _channel_end_date = epoch.split("_")[1]
-
                         if _channel_end_date == "None":
                             _channel_end_date = literal_eval(_channel_end_date)
                         else:
@@ -173,7 +169,6 @@ for network in bank['Networks'].keys():
                                 dip = Channels[channel]["_dip"],
                                 types = Channels[channel]["_types"],
                                 sample_rate = Channels[channel]["_sample_rate"],
-                                calibration_units = Channels[channel]["_calibration_units"],
                                 equipment = obspy.core.inventory.Equipment(description = Channels[channel]["_equipment_description"], serial_number = Channels[channel]["_equipment_serial"]),
                                 sensor = obspy.core.inventory.Equipment(description = Channels[channel]["_sensor_description"], serial_number = Channels[channel]["_equipment_serial"]),
                                 response = _response,
