@@ -12,6 +12,145 @@
     _description : "Neptune observatory seismographic station sites. Owned and operatred by Ocean Networks Canada (ONC), an initiative of the University of Victoria (UVic)."
     "Stations" : 
 
+      "BACND" : 
+        From : "2018-06-22T03:00:00.000000Z"
+        To : "None"
+        _latitude : 48.34594
+        _longitude : -126.158
+        _elevation : -643.3 #meters
+        _site : "Barkley Canyon Node"
+        _geology : ""
+        _description : "Station BACND is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
+
+        "Epoch" : 
+          "2018-06-22T03:00:00.000000Z_None" : 
+            Channels : 
+              #high rate
+              "BNE" : &APT_ACC_HighRate
+                _location_code : "Z1"
+                _azimuth : 90
+                _dip : 0
+                _depth : 0
+                _sample_rate : 20
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_description : 
+                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
+                  - "Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : 
+                  - "APT55"
+                  - "LOG55"
+                _sensor_keys : "NV.BACND.Z1.BNE"
+                _datalogger_keys : "NV.BACND.Z1.BNE" 
+                _sensor_type : "APT"
+                _sensor_description : "RBR Concerto APT" 
+                _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=BACND&deviceCategory=TILTMTR"
+                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24154"
+                _calibration_units : "UNKNOWN"
+
+              "BNN" :
+                <<: *APT_ACC_HighRate
+                _azimuth : 0
+                _sensor_keys : "NV.BACND.Z1.BNN"
+                _datalogger_keys : "NV.BACND.Z1.BNN" 
+
+              "BNZ"
+                <<: *APT_ACC_HighRate
+                _azimuth : 0
+                _dip : -90
+                _sensor_keys : "NV.BACND.Z1.BNZ"
+                _datalogger_keys : "NV.BACND.Z1.BNZ" 
+
+              #pressure
+              "BDD" : &APT_Pressure_HighRate
+                <<: *APT_ACC_HighRate
+                _azimuth : 0
+                _sensor_keys : "NV.BACND.Z1.BDD"
+                _datalogger_keys : "NV.BACND.Z1.BDD"
+
+              # pressure temperature (-1 depth)
+              "BKP" : &APT_Temperature_HighRate
+                <<: *APT_Pressure_HighRate
+                _depth : -1 #m
+                _sensor_keys : "NV.BACND.Z1.BKP"
+                _datalogger_keys : "NV.BACND.Z1.BKP"
+
+              # acceleration tempeerature
+              "BKA" : 
+                <<: *APT_Temperature_HighRate
+                _depth : 0 #m
+                _sensor_keys : "NV.BACND.Z1.BKA"
+                _datalogger_keys : "NV.BACND.Z1.BKA"
+
+              #ascii data high rate
+              "AHD" : 
+                pass : 0
+              #ascii events
+              "AED" : 
+                pass : 0
+
+              #low rate
+              "MNE" : &APT_ACC_LowRate
+                _location_code : "Z1"
+                _azimuth : 90
+                _dip : 0
+                _depth : 0
+                _sample_rate : 5
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_description : 
+                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
+                  - "Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : 
+                  - "APT55"
+                  - "LOG55"
+                _sensor_keys : "NV.BACND.Z1.MNE"
+                _datalogger_keys : "NV.BACND.Z1.MNE" 
+                _sensor_type : "APT"
+                _sensor_description : "RBR Concerto APT" 
+                _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=BACND&deviceCategory=TILTMTR"
+                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24154"
+                _calibration_units : "UNKNOWN"
+
+              "MNN"
+                <<: *APT_ACC_LowRate
+                _azimuth : 0
+                _sensor_keys : "NV.BACND.Z1.MNN"
+                _datalogger_keys : "NV.BACND.Z1.MNN" 
+
+              "MNZ"
+                <<: *APT_ACC_LowRate
+                _azimuth : 0
+                _dip : -90
+                _sensor_keys : "NV.BACND.Z1.MNZ"
+                _datalogger_keys : "NV.BACND.Z1.MNZ" 
+
+              #pressure
+              "MDD" : 
+                <<: *APT_Pressure_HighRate
+                _sample_rate : 5.0
+                _sensor_keys : "NV.BACND.Z1.MDD"
+                _datalogger_keys : "NV.BACND.Z1.MDD"
+
+              # pressure temperature
+              "MKP" :
+                <<: *APT_Temperature_HighRate
+                _sample_rate : 5.0
+                _sensor_keys : "NV.BACND.Z1.MKP"
+                _datalogger_keys : "NV.BACND.Z1.MKP"
+
+              # acceleration tempeerature
+              "MKA" :
+                <<: *APT_Temperature_HighRate
+                _sample_rate : 5.0
+                _depth : 0 #m
+                _sensor_keys : "NV.BACND.Z1.MKA"
+                _datalogger_keys : "NV.BACND.Z1.MKA"
+
+              #ascii data low rate
+              "ALD" : 
+                pass : 0
+
       "CQS64" :
         From : "2016-07-01T00:00:00.000000Z"
         To : "None"
