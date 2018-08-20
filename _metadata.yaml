@@ -1,7 +1,8 @@
 #######################################################################
 ### StationXML                                                      ###
 ### Ocean Networks Canada, Neptune Observation Seismic Network (NV) ###
-### February 14, 2018                                               ###
+### Created : February 14, 2018                                     ###
+### Direct inquiries to jfarrugia@uvic                              ###
 #######################################################################
 
 #Create a top-down nested collection for Neptune (NV):
@@ -26,7 +27,7 @@
           "2018-06-22T03:00:00.000000Z_None" : 
             Channels : 
               #high rate
-              "BNE" : &APT_ACC_HighRate
+              "BNE" : &APT56_ACC_HighRate
                 _location_code : "Z1"
                 _azimuth : 90
                 _dip : 0
@@ -38,8 +39,8 @@
                   - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
                   - "Internal logger with 50 ms timestamp resolution"
                 _equipment_serial : 
-                  - "APT55"
-                  - "LOG55"
+                  - "APT56"
+                  - "LOG56"
                 _sensor_keys : "NV.BACND.Z1.BNE"
                 _datalogger_keys : "NV.BACND.Z1.BNE" 
                 _sensor_type : "APT"
@@ -49,48 +50,41 @@
                 _calibration_units : "UNKNOWN"
 
               "BNN" :
-                <<: *APT_ACC_HighRate
+                <<: *APT56_ACC_HighRate
                 _azimuth : 0
                 _sensor_keys : "NV.BACND.Z1.BNN"
                 _datalogger_keys : "NV.BACND.Z1.BNN" 
 
-              "BNZ"
-                <<: *APT_ACC_HighRate
+              "BNZ" :
+                <<: *APT56_ACC_HighRate
                 _azimuth : 0
                 _dip : -90
                 _sensor_keys : "NV.BACND.Z1.BNZ"
                 _datalogger_keys : "NV.BACND.Z1.BNZ" 
 
               #pressure
-              "BDD" : &APT_Pressure_HighRate
-                <<: *APT_ACC_HighRate
+              "BDD" : &APT56_Pressure_HighRate
+                <<: *APT56_ACC_HighRate
                 _azimuth : 0
                 _sensor_keys : "NV.BACND.Z1.BDD"
                 _datalogger_keys : "NV.BACND.Z1.BDD"
 
               # pressure temperature (-1 depth)
-              "BKP" : &APT_Temperature_HighRate
-                <<: *APT_Pressure_HighRate
+              "BKP" : &APT56_Temperature_HighRate
+                <<: *APT56_Pressure_HighRate
                 _depth : -1 #m
                 _sensor_keys : "NV.BACND.Z1.BKP"
                 _datalogger_keys : "NV.BACND.Z1.BKP"
 
               # acceleration tempeerature
               "BKA" : 
-                <<: *APT_Temperature_HighRate
+                <<: *APT56_Temperature_HighRate
                 _depth : 0 #m
                 _sensor_keys : "NV.BACND.Z1.BKA"
                 _datalogger_keys : "NV.BACND.Z1.BKA"
 
-              #ascii data high rate
-              "AHD" : 
-                pass : 0
-              #ascii events
-              "AED" : 
-                pass : 0
-
               #low rate
-              "MNE" : &APT_ACC_LowRate
+              "MNE" : &APT56_ACC_LowRate
                 _location_code : "Z1"
                 _azimuth : 90
                 _dip : 0
@@ -102,8 +96,8 @@
                   - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
                   - "Internal logger with 50 ms timestamp resolution"
                 _equipment_serial : 
-                  - "APT55"
-                  - "LOG55"
+                  - "APT56"
+                  - "LOG56"
                 _sensor_keys : "NV.BACND.Z1.MNE"
                 _datalogger_keys : "NV.BACND.Z1.MNE" 
                 _sensor_type : "APT"
@@ -112,14 +106,14 @@
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24154"
                 _calibration_units : "UNKNOWN"
 
-              "MNN"
-                <<: *APT_ACC_LowRate
+              "MNN" :
+                <<: *APT56_ACC_LowRate
                 _azimuth : 0
                 _sensor_keys : "NV.BACND.Z1.MNN"
                 _datalogger_keys : "NV.BACND.Z1.MNN" 
 
-              "MNZ"
-                <<: *APT_ACC_LowRate
+              "MNZ" :
+                <<: *APT56_ACC_LowRate
                 _azimuth : 0
                 _dip : -90
                 _sensor_keys : "NV.BACND.Z1.MNZ"
@@ -127,29 +121,30 @@
 
               #pressure
               "MDD" : 
-                <<: *APT_Pressure_HighRate
+                <<: *APT56_Pressure_HighRate
                 _sample_rate : 5.0
                 _sensor_keys : "NV.BACND.Z1.MDD"
                 _datalogger_keys : "NV.BACND.Z1.MDD"
 
               # pressure temperature
               "MKP" :
-                <<: *APT_Temperature_HighRate
+                <<: *APT56_Temperature_HighRate
                 _sample_rate : 5.0
                 _sensor_keys : "NV.BACND.Z1.MKP"
                 _datalogger_keys : "NV.BACND.Z1.MKP"
 
               # acceleration tempeerature
               "MKA" :
-                <<: *APT_Temperature_HighRate
+                <<: *APT56_Temperature_HighRate
                 _sample_rate : 5.0
                 _depth : 0 #m
                 _sensor_keys : "NV.BACND.Z1.MKA"
                 _datalogger_keys : "NV.BACND.Z1.MKA"
 
               #ascii data low rate
-              "ALD" : 
-                pass : 0
+              # "ALD" :
+              # "AHD" :
+              # "AED" : 
 
       "CQS64" :
         From : "2016-07-01T00:00:00.000000Z"
@@ -219,9 +214,9 @@
                 _dip : 0
                 _depth : 0
                 _sample_rate : 200
-                _latitude : 48.699853
-                _longitude : -126.872302
-                _elevation : -1315.0 #meters
+                _latitude : 48.69965621
+                _longitude : -126.87264068
+                _elevation : -1318.0 #meters
                 _types : 
                   - "GEOPHYSICAL"
                 _equipment_description : #order should be: [sensor, data_logger]
@@ -249,9 +244,9 @@
       "ENHR" : 
         From : "2018-06-19T00:00:00.000000Z"
         To : "None"
-        _latitude : 47.9733
-        _longitude : -129.0820
-        _elevation : -2154.0 #meters
+        _latitude : 47.968657
+        _longitude : -129.086738
+        _elevation : -2162 #meters
         _site : "Endeavour High Rise - Godzilla"
         _geology : ""
         _description : "Station ENHR is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
@@ -262,9 +257,6 @@
 
               "HHE" : &TR1160_E
                 _location_code : ""
-                _latitude : 47.9493
-                _longitude : -129.0985
-                _elevation : -2192 
                 _sample_rate : 200
                 _azimuth : 90
                 _depth : 0
@@ -526,9 +518,9 @@
 
               "CNE-1" : &TR1181_E
                 _location_code : "W1"
-                _latitude : 47.949444968836218
-                _longitude : -129.09898716273187
-                _elevation : -2361 
+                _latitude : 47.949515
+                _longitude : -129.098677
+                _elevation : -2185 
                 _sample_rate : 500
                 _azimuth : 90
                 _depth : 0
@@ -621,9 +613,9 @@
 
               "CNE-2" : &TR1182_E
                 _location_code : "W2"
-                _latitude : 47.948577428584201
-                _longitude : -129.09867053541015
-                _elevation : -2361 
+                _latitude : 47.949635
+                _longitude : -129.097900
+                _elevation : -2193 
                 _sample_rate : 500
                 _azimuth : 90
                 _depth : 0
@@ -718,9 +710,9 @@
 
               "CNE-3" : &TR1183_E
                 _location_code : "W3"
-                _latitude : 47.949047779089987
-                _longitude : -129.09796775067417
-                _elevation : -2361 
+                _latitude : 47.948912
+                _longitude : -129.098117
+                _elevation : -2192 
                 _sample_rate : 500
                 _azimuth : 90
                 _depth : 0
@@ -1039,6 +1031,9 @@
 
               "HNE" : &CORK1027_TitanEA_Channel #titan
                 _location_code : "W1"
+                _latitude : 47.7569541
+                _longitude : -127.73171457
+                _elevation : -2661.0
                 _azimuth : 90
                 _dip : 0
                 _depth : 0
@@ -1456,6 +1451,131 @@
                 _sample_rate : 8
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
                 _azimuth : 357
+
+      "CBC27" : 
+        From : "2018-06-24T00:00:00.000000Z"
+        To : "None"
+        _latitude : 47.756717
+        _longitude : -127.731602
+        _elevation : -2656
+        _site : "Cascadia Basin - Node ODP1027C"
+        _geology : ""
+        _description : "Station CBC27 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
+        "Epoch" : 
+
+          "2018-06-24T00:00:00.000000Z_None" : 
+            Channels : #channel codes
+
+              "BNE" : &APT57_ACC_HighRate
+                _location_code : "Z1"
+                _azimuth : 90
+                _dip : 0
+                _depth : 0
+                _sample_rate : 20
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_description : 
+                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
+                  - "Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : 
+                  - "APT57"
+                  - "LOG57"
+                _sensor_keys : "NV.CBC27.Z1.BNE"
+                _datalogger_keys : "NV.CBC27.Z1.BNE" 
+                _sensor_type : "APT"
+                _sensor_description : "RBR Concerto APT" 
+                _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=CBC27&deviceCategory=TILTMTR"
+                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24155"
+                _calibration_units : "UNKNOWN"
+
+              "BNN" : 
+                <<: *APT57_ACC_HighRate
+                _azimuth : 0
+                _sensor_keys : "NV.CBC27.Z1.BNN"
+                _datalogger_keys : "NV.CBC27.Z1.BNN"
+
+              "BNZ" :
+                <<: *APT57_ACC_HighRate
+                _azimuth : 0
+                _dip : -90
+                _sensor_keys : "NV.CBC27.Z1.BNZ"
+                _datalogger_keys : "NV.CBC27.Z1.BNZ"
+
+              "BDD" : &APT57_Pressure_HighRate
+                <<: *APT57_ACC_HighRate
+                _azimuth : 0
+                _sensor_keys : "NV.CBC27.Z1.BDD"
+                _datalogger_keys : "NV.CBC27.Z1.BDD"
+
+              "BKP" : &APT57_Temperature_HighRate
+                <<: *APT57_Pressure_HighRate
+                _depth : -1 #m
+                _sensor_keys : "NV.CBC27.Z1.BKP"
+                _datalogger_keys : "NV.CBC27.Z1.BKP"
+
+              "BKA" : 
+                <<: *APT57_Temperature_HighRate
+                _depth : 0
+                _sensor_keys : "NV.CBC27.Z1.BKA"
+                _datalogger_keys : "NV.CBC27.Z1.BKA"
+
+              "MNE" : &APT57_ACC_LowRate
+                _location_code : "Z1"
+                _azimuth : 90
+                _dip : 0
+                _depth : 0
+                _sample_rate : 5
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_description : 
+                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
+                  - "Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : 
+                  - "APT57"
+                  - "LOG57"
+                _sensor_keys : "NV.CBC27.Z1.MNE"
+                _datalogger_keys : "NV.CBC27.Z1.MNE" 
+                _sensor_type : "APT"
+                _sensor_description : "RBR Concerto APT" 
+                _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=CBC27&deviceCategory=TILTMTR"
+                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24155"
+                _calibration_units : "UNKNOWN"
+
+              "MNN" : 
+                <<: *APT57_ACC_LowRate
+                _azimuth : 0
+                _sensor_keys : "NV.CBC27.Z1.MNN"
+                _datalogger_keys : "NV.CBC27.Z1.MNN"
+
+              "MNZ" : 
+                <<: *APT57_ACC_LowRate
+                _azimuth : 0
+                _dip : -90
+                _sensor_keys : "NV.CBC27.Z1.MNZ"
+                _datalogger_keys : "NV.CBC27.Z1.MNZ"
+
+              "MDD" : 
+                <<: *APT57_Pressure_HighRate
+                _sample_rate : 5
+                _sensor_keys : "NV.CBC27.Z1.MDD"
+                _datalogger_keys : "NV.CBC27.Z1.MDD"
+
+              "MKP" : 
+                <<: *APT57_Temperature_HighRate
+                _sample_rate : 5
+                _sensor_keys : "NV.CBC27.Z1.MKP"
+                _datalogger_keys : "NV.CBC27.Z1.MKP"
+
+              "MKA" : 
+                <<: *APT57_Temperature_HighRate
+                _sample_rate : 5
+                _depth : 0 #m
+                _sensor_keys : "NV.CBC27.Z1.MKA"
+                _datalogger_keys : "NV.CBC27.Z1.MKA"
+
+              # "AED"
+              # "AHD"
+              # "ALD"
         
       "NC89" :
         From : "2009-09-17T00:00:00.000000Z"
@@ -1468,6 +1588,133 @@
         _description : "Station NC89 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : #The time interval of instrument settings
 
+          "2017-06-14T00:00:00.000000Z_None" :
+            Channels : #channel codes
+              #high rate
+              "BNE" : &APT55_ACC_HighRate
+                _latitude : 48.6709
+                _longitude : -126.8481
+                _elevation : -1283
+                _location_code : "Z1"
+                _azimuth : 90
+                _dip : 0
+                _depth : 0
+                _sample_rate : 20
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_description : 
+                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
+                  - "Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : 
+                  - "APT55"
+                  - "LOG55"
+                _sensor_keys : "NV.NC89.Z1.BNE"
+                _datalogger_keys : "NV.NC89.Z1.BNE" 
+                _sensor_type : "APT"
+                _sensor_description : "RBR Concerto APT" 
+                _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=NC89&deviceCategory=TILTMTR"
+                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24150"
+                _calibration_units : "UNKNOWN"
+
+              "BNN" :
+                <<: *APT55_ACC_HighRate
+                _azimuth : 0
+                _sensor_keys : "NV.NC89.Z1.BNN"
+                _datalogger_keys : "NV.NC89.Z1.BNN" 
+
+              "BNZ" :
+                <<: *APT55_ACC_HighRate
+                _azimuth : 0
+                _dip : -90
+                _sensor_keys : "NV.NC89.Z1.BNZ"
+                _datalogger_keys : "NV.NC89.Z1.BNZ" 
+
+              #pressure
+              "BDD" : &APT55_Pressure_HighRate
+                <<: *APT55_ACC_HighRate
+                _azimuth : 0
+                _sensor_keys : "NV.NC89.Z1.BDD"
+                _datalogger_keys : "NV.NC89.Z1.BDD"
+
+              # pressure temperature (-1 depth)
+              "BKP" : &APT55_Temperature_HighRate
+                <<: *APT55_Pressure_HighRate
+                _depth : -1 #m
+                _sensor_keys : "NV.NC89.Z1.BKP"
+                _datalogger_keys : "NV.NC89.Z1.BKP"
+
+              # acceleration tempeerature
+              "BKA" : 
+                <<: *APT55_Temperature_HighRate
+                _depth : 0 #m
+                _sensor_keys : "NV.NC89.Z1.BKA"
+                _datalogger_keys : "NV.NC89.Z1.BKA"
+
+              #low rate
+              "MNE" : &APT55_ACC_LowRate
+                _latitude : 48.6709
+                _longitude : -126.8481
+                _elevation : -1283
+                _location_code : "Z1"
+                _azimuth : 90
+                _dip : 0
+                _depth : 0
+                _sample_rate : 5
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_description : 
+                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
+                  - "Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : 
+                  - "APT55"
+                  - "LOG55"
+                _sensor_keys : "NV.NC89.Z1.MNE"
+                _datalogger_keys : "NV.NC89.Z1.MNE" 
+                _sensor_type : "APT"
+                _sensor_description : "RBR Concerto APT" 
+                _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=NC89&deviceCategory=TILTMTR"
+                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24150"
+                _calibration_units : "UNKNOWN"
+
+              "MNN" :
+                <<: *APT55_ACC_LowRate
+                _azimuth : 0
+                _sensor_keys : "NV.NC89.Z1.MNN"
+                _datalogger_keys : "NV.NC89.Z1.MNN" 
+
+              "MNZ" :
+                <<: *APT55_ACC_LowRate
+                _azimuth : 0
+                _dip : -90
+                _sensor_keys : "NV.NC89.Z1.MNZ"
+                _datalogger_keys : "NV.NC89.Z1.MNZ" 
+
+              #pressure
+              "MDD" : 
+                <<: *APT55_Pressure_HighRate
+                _sample_rate : 5.0
+                _sensor_keys : "NV.NC89.Z1.MDD"
+                _datalogger_keys : "NV.NC89.Z1.MDD"
+
+              # pressure temperature
+              "MKP" :
+                <<: *APT55_Temperature_HighRate
+                _sample_rate : 5.0
+                _sensor_keys : "NV.NC89.Z1.MKP"
+                _datalogger_keys : "NV.NC89.Z1.MKP"
+
+              # acceleration tempeerature
+              "MKA" :
+                <<: *APT55_Temperature_HighRate
+                _sample_rate : 5.0
+                _depth : 0 #m
+                _sensor_keys : "NV.NC89.Z1.MKA"
+                _datalogger_keys : "NV.NC89.Z1.MKA"
+
+                #ALD
+                #AHD
+                #AED
+
           "2017-06-08T19:17:35.000000Z_None" : 
             Channels : #channel codes
 
@@ -1475,8 +1722,8 @@
                 <<: *CQS64_TitanEA_Channel
                 _sample_rate : 200
                 _azimuth : 94
-                _latitude : 48.670473
-                _longitude : -126.847701
+                _latitude : 48.67047314
+                _longitude : -126.84770139
                 _elevation : -1259.0 #meters
                 _types : 
                   - "GEOPHYSICAL"
@@ -1502,6 +1749,9 @@
 
               "HHE" : &NC89_CMG-1T_Channel #seismometer; 200 sps
                 _location_code : ""
+                _latitude : 48.6705366667
+                _longitude : -126.8487666667
+                _elevation : -1256
                 _azimuth : 102
                 _dip : 0
                 _depth : 0
@@ -1698,6 +1948,9 @@
 
               "HNE" : &BarkleyUppSlope_TitanEA_Channel #titan
                 _location_code : "W1"
+                _latitude : 48.42656667
+                _longitude : -126.17456
+                _elevation : 392
                 _azimuth : 90
                 _dip : 0
                 _depth : 0
@@ -2453,8 +2706,8 @@
       "BACME" :
         From : "2016-06-15T17:25:43.000000Z"
         To : "None"
-        _latitude : 48.314654
-        _longitude : -126.058199
+        _latitude : 48.31465395
+        _longitude : -126.05819926
         _elevation : -897.0 #meters
         _site : "Barkley Canyon MidEast"
         _geology : ""

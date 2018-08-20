@@ -5,7 +5,12 @@ Created on Wed Feb  7 07:58:37 2018
 @author: jfarrugia
 
 This writes directly to the ONC_StationXML Git Desktop respository folder in Documents.
-Changes need to be commited, and pushed to the online respository. 
+Changes need to be commited, and pushed to the online respository.
+
+Merges the NV_ONC.xml file written by NV_StationXML.py with the original StationXML
+    downloaded from IRIS for the NEPTUNE seismic network (NV). In this way, 
+    channels for station not accounted for in _metadata.yaml are not missed when 
+    the updated metadata StationXML file is returned to IRIS.
 
 """
 

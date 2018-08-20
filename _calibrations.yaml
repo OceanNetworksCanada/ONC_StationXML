@@ -188,6 +188,24 @@ Calibrations :
     NS : "already_calibrated"
     UD : "already_calibrated"
 
+  # RBR Concerto APT (tri-axis accelerometer, bottom pressure recorder and thermometer)
+  "APT55" : 
+    EW : "already_calibrated"
+    NS : "already_calibrated"
+    UD : "already_calibrated"
+
+  # RBR Concerto APT (tri-axis accelerometer, bottom pressure recorder and thermometer)
+  "APT56" : 
+    EW : "already_calibrated"
+    NS : "already_calibrated"
+    UD : "already_calibrated"
+
+  # RBR Concerto APT (tri-axis accelerometer, bottom pressure recorder and thermometer)
+  "APT57" : 
+    EW : "already_calibrated"
+    NS : "already_calibrated"
+    UD : "already_calibrated"
+
   ############################ DATALOGGERS ############################
   
   #REFTEKs !@# Set to "1", because all that is needed is the standard coefficients from NRL.
@@ -361,6 +379,24 @@ Calibrations :
 
   "E056" : 
     "RADIAN" : 
+      EW : "already_calibrated"
+      NS : "already_calibrated"
+      UD : "already_calibrated"
+
+  "LOG55" :
+    "APT":
+      EW : "already_calibrated"
+      NS : "already_calibrated"
+      UD : "already_calibrated"
+
+  "LOG56" :
+    "APT":
+      EW : "already_calibrated"
+      NS : "already_calibrated"
+      UD : "already_calibrated"
+
+  "LOG57" :
+    "APT":
       EW : "already_calibrated"
       NS : "already_calibrated"
       UD : "already_calibrated"

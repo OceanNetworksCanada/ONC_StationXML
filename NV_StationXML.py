@@ -2,6 +2,9 @@
 """
 Created on Tue Feb 13 12:45:56 2018
 
+Python script to execute _metadata.yaml file
+Creates an ObsPy StationXML Inventory object for NV seismic station network
+
 @author: jfarrugia
 """
 
@@ -150,8 +153,11 @@ for network in bank['Networks'].keys():
                             for stage in _response.response_stages:
                                 if stage.input_units == 'V' and stage.output_units == 'COUNTS': #datalogger stage
                                     _response.response_stages[2].stage_gain = _datalogger_calibs
-                            
-                        _response.recalculate_overall_sensitivity()
+                        
+                        try: 
+                            _response.recalculate_overall_sensitivity()
+                        except:
+                            print('Unable to "recalculate_overall_sensitivity" for responses with input units different than ["DEF, "VEL", "ACC"]. Moving on.\n')
                         
                         # Construct the channel; these are the channel attributes that need to be specified, or left empty "" if not known.
                         try:
