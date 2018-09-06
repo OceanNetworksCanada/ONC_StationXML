@@ -513,6 +513,117 @@
         _description : "Station KEMF is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : 
 
+          "2018-08-10T00:00:00.000000Z_2018-10-20T00:00:00.000000Z" : 
+            #200 sps during driver testing -- interim/penultimate to the 500 sps
+            Channels : 
+              "HNE-1" : &TR1181_200_E
+                _location_code : "W1"
+                _latitude : 47.949515
+                _longitude : -129.098677
+                _elevation : -2185 
+                _sample_rate : 200
+                _azimuth : 90
+                _depth : 0
+                _dip : 0
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_serial : 
+                  - "TR1181" #accelerometer
+                  - "E055" #digitizer
+                _equipment_description : 
+                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
+                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _sensor_type : "RADIAN"
+                _sensor_description : "Güralp Radian/24-bit built-in digitiser"
+                _sensor_keys : "NV.KEMF.W1.HNE_200"
+                _datalogger_keys : "NV.KEMF.W1.HNE_200"
+                _dataSearchURL : "None"
+                _deviceURL : "None"
+
+              "HNN-1" :
+                <<: *TR1181_200_E
+                _azimuth : 0
+                _sensor_keys : "NV.KEMF.W1.HNN_200"
+                _datalogger_keys : "NV.KEMF.W1.HNN_200"
+
+              "HNZ-1" : 
+                <<: *TR1181_200_E
+                _sensor_keys : "NV.KEMF.W1.HNZ_200"
+                _datalogger_keys : "NV.KEMF.W1.HNZ_200"
+              
+              "HNE-2" : &TR1182_200_E
+                _location_code : "W2"
+                _latitude : 47.949635
+                _longitude : -129.097900
+                _elevation : -2193 
+                _sample_rate : 200
+                _azimuth : 90
+                _depth : 0
+                _dip : 0
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_serial : 
+                  - "TR1182" #accelerometer
+                  - "E055" #digitizer
+                _equipment_description : 
+                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
+                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _sensor_type : "RADIAN"
+                _sensor_description : 
+                  - "Güralp Radian/24-bit built-in digitiser"
+                _sensor_keys : "NV.KEMF.W2.HNE_200"
+                _datalogger_keys : "NV.KEMF.W2.HNE_200"
+                _dataSearchURL : "None"
+                _deviceURL : "None"
+
+              "HNN-2" : 
+                <<: *TR1182_200_E
+                _azimuth : 0
+                _sensor_keys : "NV.KEMF.W2.HNN_200"
+                _datalogger_keys : "NV.KEMF.W2.HNN_200"
+
+              "HNZ-2" : 
+                <<: *TR1182_200_E
+                _sensor_keys : "NV.KEMF.W2.HNZ_200"
+                _datalogger_keys : "NV.KEMF.W2.HNZ_200"
+
+              "HNE-3" : &TR1183_200_E
+                _location_code : "W3"
+                _latitude : 47.948912
+                _longitude : -129.098117
+                _elevation : -2192 
+                _sample_rate : 200
+                _azimuth : 90
+                _depth : 0
+                _dip : 0
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_serial : 
+                  - "TR1183" #accelerometer
+                  - "E055" #digitizer
+                _equipment_description : 
+                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
+                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _sensor_type : "RADIAN"
+                _sensor_description : 
+                  - "Güralp Radian/24-bit built-in digitiser"
+                _sensor_keys : "NV.KEMF.W3.HNE_200"
+                _datalogger_keys : "NV.KEMF.W3.HNE_200"
+                _dataSearchURL : "None"
+                _deviceURL : "None"
+
+              "HNN-3" :
+                <<: *TR1183_200_E
+                _azimuth : 0
+                _sensor_keys : "NV.KEMF.W3.HNN_200"
+                _datalogger_keys : "NV.KEMF.W3.HNN_200"
+
+              "HNZ-3" :
+                <<: *TR1183_200_E
+                _sensor_keys : "NV.KEMF.W3.HNZ_200"
+                _datalogger_keys : "NV.KEMF.W3.HNZ_200"
+
+
           "2018-06-19T00:00:00.000000Z_None" : 
             Channels : 
 
@@ -1584,7 +1695,7 @@
         _longitude : -126.848767
         _elevation : -1258.0 #meters
         _site : "Clayoquot Slope - Bullseye (Node ODP1089)"
-        _geology : "Not specified."
+        _geology : "Accreted sediments, superimposed slope deposits, and a ubiquitous gas-hydrate bottom-simulating reflector."
         _description : "Station NC89 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : #The time interval of instrument settings
 
