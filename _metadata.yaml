@@ -77,7 +77,7 @@
                 _datalogger_keys : "NV.BACND.Z1.BKP"
 
               # acceleration tempeerature
-              "BKA" : 
+              "BKR" : 
                 <<: *APT56_Temperature_HighRate
                 _depth : 0 #m
                 _sensor_keys : "NV.BACND.Z1.BKA"
@@ -513,8 +513,8 @@
         _description : "Station KEMF is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : 
 
-          "2018-08-10T00:00:00.000000Z_2018-10-20T00:00:00.000000Z" : 
-            #200 sps during driver testing -- interim/penultimate to the 500 sps
+          "2018-08-10T00:00:00.000000Z_None" : 
+            #200 sps during driver testing -- channel should disappear from IRIS once we go back to 500 sps
             Channels : 
               "HNE-1" : &TR1181_200_E
                 _location_code : "W1"
@@ -1137,41 +1137,6 @@
         _description : "Station NC27 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" :
 
-          "2018-06-19T00:00:00.000000Z_None" : 
-            Channels : 
-
-              "HNE" : &CORK1027_TitanEA_Channel #titan
-                _location_code : "W1"
-                _latitude : 47.7569541
-                _longitude : -127.73171457
-                _elevation : -2661.0
-                _azimuth : 90
-                _dip : 0
-                _depth : 0
-                _sample_rate : 200
-                _types : 
-                  - "GEOPHYSICAL"
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "Nanometrics TitanEA (S/N 000788) deployed at the Cascadia Basin CORK 1027 site."
-                  - "The dataloggers in the Titan SMA digital accelerometers are Centaur dataloggers with a single preamp gain choice of 1 (40 Vpp)."
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "000788"
-                  - "788"
-                _sensor_keys : "RESP.XX.NS128..BNZ.Titan.DC_430.20V.2G" 
-                _datalogger_keys : "RESP.XX.NN429..HHZ.CENTAUR.1.200.OFF"
-                _sensor_type : "TitanEA3_5"
-                _sensor_description : "Nanometrics TitanEA Accelerograph 2g/Built-in datalogger"
-                _dataSearchURL :  "None"
-                _deviceURL : "http://data.oceannetworks.ca/DeviceListing?DeviceId=24433"
-                _calibration_units : "UNKNOWN"
-              "HNN" : 
-                <<: *CORK1027_TitanEA_Channel #re-use parameters from East channel setup; changing unique characteristics
-                _azimuth : 0
-              "HNZ" :
-                <<: *CORK1027_TitanEA_Channel
-                _azimuth : 0
-                _dip : -90
-
 
           "2009-09-14T00:00:00.000000Z_2010-06-10T17:42:59.000000Z" :
             Channels : #100 and 2 Hz
@@ -1194,7 +1159,7 @@
                 _sensor_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_keys : "RESP.XX.NS004..BHZ.CMG1T.360.1500"
                 _datalogger_keys : "RESP.XX.G0159..HHZ.CMG_DM24_MK3_FIX_24.1.1000_200.100"
-                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=13117"
+                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=21620"
                 _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=NC27&deviceCategory=BBS"
               
               "HHN" : &NC27_T1067_N
@@ -1562,6 +1527,7 @@
                 _sample_rate : 8
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
                 _azimuth : 357
+                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=21620"
 
       "CBC27" : 
         From : "2018-06-24T00:00:00.000000Z"
@@ -1573,6 +1539,42 @@
         _geology : ""
         _description : "Station CBC27 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : 
+
+          "2018-06-19T00:00:00.000000Z_None" : 
+            Channels : 
+
+              "HNE" : &CORK1027_TitanEA_Channel #titan
+                _location_code : "W1"
+                _latitude : 47.7569541
+                _longitude : -127.73171457
+                _elevation : -2661.0
+                _azimuth : 90
+                _dip : 0
+                _depth : 0
+                _sample_rate : 200
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_description : #order should be: [sensor, data_logger]
+                  - "Nanometrics TitanEA (S/N 000788) deployed at the Cascadia Basin CORK 1027 site."
+                  - "The dataloggers in the Titan SMA digital accelerometers are Centaur dataloggers with a single preamp gain choice of 1 (40 Vpp)."
+                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
+                  - "000788"
+                  - "788"
+                _sensor_keys : "RESP.XX.NS128..BNZ.Titan.DC_430.20V.2G" 
+                _datalogger_keys : "RESP.XX.NN429..HHZ.CENTAUR.1.200.OFF"
+                _sensor_type : "TitanEA3_5"
+                _sensor_description : "Nanometrics TitanEA Accelerograph 2g/Built-in datalogger"
+                _dataSearchURL :  "None"
+                _deviceURL : "http://data.oceannetworks.ca/DeviceListing?DeviceId=24433"
+                _calibration_units : "UNKNOWN"
+              "HNN" : 
+                <<: *CORK1027_TitanEA_Channel #re-use parameters from East channel setup; changing unique characteristics
+                _azimuth : 0
+              "HNZ" :
+                <<: *CORK1027_TitanEA_Channel
+                _azimuth : 0
+                _dip : -90
+
 
           "2018-06-24T00:00:00.000000Z_None" : 
             Channels : #channel codes
@@ -1624,7 +1626,7 @@
                 _sensor_keys : "NV.CBC27.Z1.BKP"
                 _datalogger_keys : "NV.CBC27.Z1.BKP"
 
-              "BKA" : 
+              "BKR" : 
                 <<: *APT57_Temperature_HighRate
                 _depth : 0
                 _sensor_keys : "NV.CBC27.Z1.BKA"
@@ -1755,7 +1757,7 @@
                 _datalogger_keys : "NV.NC89.Z1.BKP"
 
               # acceleration tempeerature
-              "BKA" : 
+              "BKR" : 
                 <<: *APT55_Temperature_HighRate
                 _depth : 0 #m
                 _sensor_keys : "NV.NC89.Z1.BKA"
@@ -2856,3 +2858,7 @@
                 <<: *BACME_TitanEA_Channel
                 _azimuth : 0
                 _dip : -90 
+
+              # "MNE"
+              # "MNN"
+              # "MNZ"
