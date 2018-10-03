@@ -1,0 +1,98 @@
+Inventory created at 2018-10-02T14:49:48.210206Z
+        Created by: ObsPy 1.1.0
+                    https://www.obspy.org
+        Sending institution: Joseph Farrugia, Ocean Networks Canada
+        Contains:
+                Networks (1):
+                        NV
+                Stations (14):
+                        NV.BACME (Barkley Canyon MidEast)
+                        NV.BACND (Barkley Canyon Node)
+                        NV.CBC27 (Cascadia Basin - Node ODP1027C)
+                        NV.CQS64 (Clayoquot Slope - ODP 1364A)
+                        NV.ENEF (Endeavour East Flank)
+                        NV.ENHR (Endeavour High Rise - Godzilla)
+                        NV.ENWF (Endeavour West Flank)
+                        NV.KEMF (Endeavour Main Field)
+                        NV.KEMO (Mothra Field)
+                        NV.NC27 (Cascadia Basin - Node ODP1026)
+                        NV.NC89 (Clayoquot Slope - Bullseye (Node ODP1089))
+                        NV.NCBC (Barkley Canyon)
+                        NV.NCHR (High Rise)
+                        NV.NSMTC (North Saanich Marine Technology Centre)
+                Channels (410):
+                        NV.BACME.W1.HNZ, NV.BACME.W1.HNN, NV.BACME.W1.HNE, NV.BACND.Z1.BDD
+                        NV.BACND.Z1.BKP, NV.BACND.Z1.BKR, NV.BACND.Z1.BNZ, 
+                        NV.BACND.Z1.BNN, NV.BACND.Z1.BNE, NV.BACND.Z1.MDD, NV.BACND.Z1.MKA
+                        NV.BACND.Z1.MKP, NV.BACND.Z1.MNZ, NV.BACND.Z1.MNN, 
+                        NV.BACND.Z1.MNE, NV.CBC27.W1.HNZ, NV.CBC27.W1.HNN, NV.CBC27.W1.HNE
+                        NV.CBC27.Z1.BDD, NV.CBC27.Z1.BKP, NV.CBC27.Z1.BKR, 
+                        NV.CBC27.Z1.BNZ, NV.CBC27.Z1.BNN, NV.CBC27.Z1.BNE, NV.CBC27.Z1.MDD
+                        NV.CBC27.Z1.MKA, NV.CBC27.Z1.MKP, NV.CBC27.Z1.MNZ, 
+                        NV.CBC27.Z1.MNN, NV.CBC27.Z1.MNE, NV.CQS64..ACE, NV.CQS64..LOG, 
+                        NV.CQS64..OCF, NV.CQS64.B1.HHZ, NV.CQS64.B1.HH1, NV.CQS64.B1.HH2, 
+                        NV.CQS64.B1.LA1, NV.CQS64.B1.LA2, NV.CQS64.B1.LCE, NV.CQS64.B1.LCL
+                        NV.CQS64.B1.LCQ, NV.CQS64.B1.LHZ, NV.CQS64.B1.LH1, 
+                        NV.CQS64.B1.LH2, NV.CQS64.B1.VCO, NV.CQS64.B1.VEA, NV.CQS64.B1.VEC
+                        NV.CQS64.B1.VEP, NV.CQS64.B1.VFP, NV.CQS64.B1.VKI, 
+                        NV.CQS64.B1.VMU, NV.CQS64.B1.VMV, NV.CQS64.B1.VMW, NV.CQS64.B2.LA1
+                        NV.CQS64.B2.LA2, NV.CQS64.B2.LCE, NV.CQS64.B2.LCO, 
+                        NV.CQS64.B2.LDM, NV.CQS64.B2.LEP, NV.CQS64.B2.LIM, NV.CQS64.B2.LKM
+                        NV.CQS64.B3.LA1, NV.CQS64.B3.LA2, NV.CQS64.B3.LE3, 
+                        NV.CQS64.B3.LE4, NV.CQS64.W1.HNZ, NV.CQS64.W1.HNN, NV.CQS64.W1.HNE
+                        NV.ENEF..EHZ, NV.ENEF..EHN, NV.ENEF..EHE, NV.ENEF..MHZ, 
+                        NV.ENEF..MHN, NV.ENEF..MHE, NV.ENHR..BNZ, NV.ENHR..BNN, 
+                        NV.ENHR..BNE, NV.ENHR..HHZ, NV.ENHR..HHN, NV.ENHR..HHE, 
+                        NV.ENHR..MHZ, NV.ENHR..MHN, NV.ENHR..MHE, NV.ENHR..MNZ, 
+                        NV.ENHR..MNN, NV.ENHR..MNE, NV.ENWF..HHZ, NV.ENWF..HHN, 
+                        NV.ENWF..HHE, NV.ENWF..HNZ, NV.ENWF..HNN, NV.ENWF..HNE, 
+                        NV.ENWF..MHZ, NV.ENWF..MHN, NV.ENWF..MHE, NV.ENWF..MNZ, 
+                        NV.ENWF..MNN, NV.ENWF..MNE, NV.KEMF..EHZ (3x), NV.KEMF..EHN (3x), 
+                        NV.KEMF..EHE (3x), NV.KEMF..LHZ, NV.KEMF..LHN, NV.KEMF..LHE, 
+                        NV.KEMF..MHZ (2x), NV.KEMF..MHN (2x), NV.KEMF..MHE (2x), 
+                        NV.KEMF.W1.CNZ, NV.KEMF.W1.CNN, NV.KEMF.W1.CNE, NV.KEMF.W1.HNZ, 
+                        NV.KEMF.W1.HNN, NV.KEMF.W1.HNE, NV.KEMF.W1.MNZ, NV.KEMF.W1.MNN, 
+                        NV.KEMF.W1.MNE, NV.KEMF.W2.CNZ, NV.KEMF.W2.CNN, NV.KEMF.W2.CNE, 
+                        NV.KEMF.W2.HNZ, NV.KEMF.W2.HNN, NV.KEMF.W2.HNE, NV.KEMF.W2.MNZ, 
+                        NV.KEMF.W2.MNN, NV.KEMF.W2.MNE, NV.KEMF.W3.CNZ, NV.KEMF.W3.CNN, 
+                        NV.KEMF.W3.CNE, NV.KEMF.W3.HNZ, NV.KEMF.W3.HNN, NV.KEMF.W3.HNE, 
+                        NV.KEMF.W3.MNZ, NV.KEMF.W3.MNN, NV.KEMF.W3.MNE, NV.KEMF.Z1.HNZ, 
+                        NV.KEMF.Z1.HNN, NV.KEMF.Z1.HNE, NV.KEMF.Z1.MNZ, NV.KEMF.Z1.MNN, 
+                        NV.KEMF.Z1.MNE, NV.KEMF.Z2.HNZ, NV.KEMF.Z2.HNN, NV.KEMF.Z2.HNE, 
+                        NV.KEMF.Z2.MNZ, NV.KEMF.Z2.MNN, NV.KEMF.Z2.MNE, NV.KEMF.Z3.HNZ, 
+                        NV.KEMF.Z3.HNN, NV.KEMF.Z3.HNE, NV.KEMF.Z3.MNZ, NV.KEMF.Z3.MNN, 
+                        NV.KEMF.Z3.MNE, NV.KEMO..EHZ, NV.KEMO..EHN, NV.KEMO..EHE, 
+                        NV.KEMO..MHZ, NV.KEMO..MHN, NV.KEMO..MHE, NV.NC27..HHZ (5x), 
+                        NV.NC27..HHN (5x), NV.NC27..HHE (5x), NV.NC27..HNZ (5x), 
+                        NV.NC27..HNN (5x), NV.NC27..HNE (5x), NV.NC27..LDD, 
+                        NV.NC27..LHZ (2x), NV.NC27..LHN (2x), NV.NC27..LHE (2x), 
+                        NV.NC27..LMZ, NV.NC27..LMN, NV.NC27..LME, NV.NC27..LNZ (2x), 
+                        NV.NC27..LNN (2x), NV.NC27..LNE (2x), NV.NC27..MDD (2x), 
+                        NV.NC27..MHZ (3x), NV.NC27..MHN (3x), NV.NC27..MHE (3x), 
+                        NV.NC27..MNZ (3x), NV.NC27..MNN (3x), NV.NC27..MNE (3x), 
+                        NV.NC89..HHZ (3x), NV.NC89..HHN (3x), NV.NC89..HHE (3x), 
+                        NV.NC89..HNZ (3x), NV.NC89..HNN (3x), NV.NC89..HNE (3x), 
+                        NV.NC89..LDD, NV.NC89..LHZ, NV.NC89..LHN, NV.NC89..LHE, 
+                        NV.NC89..LMZ, NV.NC89..LMN, NV.NC89..LME, NV.NC89..LNZ, 
+                        NV.NC89..LNN, NV.NC89..LNE, NV.NC89..MDD (2x), NV.NC89..MHZ (2x), 
+                        NV.NC89..MHN (2x), NV.NC89..MHE (2x), NV.NC89..MNZ (2x), 
+                        NV.NC89..MNN (2x), NV.NC89..MNE (2x), NV.NC89.W1.HNZ, 
+                        NV.NC89.W1.HNN, NV.NC89.W1.HNE, NV.NC89.Z1.BDD, NV.NC89.Z1.BKP, 
+                        NV.NC89.Z1.BKR, NV.NC89.Z1.BNZ, NV.NC89.Z1.BNN, NV.NC89.Z1.BNE, 
+                        NV.NC89.Z1.MDD, NV.NC89.Z1.MKA, NV.NC89.Z1.MKP, NV.NC89.Z1.MNZ, 
+                        NV.NC89.Z1.MNN, NV.NC89.Z1.MNE, NV.NCBC..HHZ (3x), 
+                        NV.NCBC..HHN (3x), NV.NCBC..HHE (3x), NV.NCBC..HNZ (3x), 
+                        NV.NCBC..HNN (3x), NV.NCBC..HNE (3x), NV.NCBC..LHZ, NV.NCBC..LHN, 
+                        NV.NCBC..LHE, NV.NCBC..LMZ, NV.NCBC..LMN, NV.NCBC..LME, 
+                        NV.NCBC..LNZ, NV.NCBC..LNN, NV.NCBC..LNE, NV.NCBC..MHZ (2x), 
+                        NV.NCBC..MHN (2x), NV.NCBC..MHE (2x), NV.NCBC..MNZ (2x), 
+                        NV.NCBC..MNN (2x), NV.NCBC..MNE (2x), NV.NCBC.W1.HNZ, 
+                        NV.NCBC.W1.HNN, NV.NCBC.W1.HNE, NV.NCHR..EHZ (3x), 
+                        NV.NCHR..EHN (3x), NV.NCHR..EHE (3x), NV.NCHR..LHZ (2x), 
+                        NV.NCHR..LHN (2x), NV.NCHR..LHE (2x), NV.NCHR..MHZ, NV.NCHR..MHN, 
+                        NV.NCHR..MHE, NV.NSMTC.B1.CNZ (5x), NV.NSMTC.B1.CN1 (5x), 
+                        NV.NSMTC.B1.CN2 (5x), NV.NSMTC.B2.CNZ (5x), NV.NSMTC.B2.CN1 (5x), 
+                        NV.NSMTC.B2.CN2 (5x), NV.NSMTC.B3.CNZ (5x), NV.NSMTC.B3.CN1 (5x), 
+                        NV.NSMTC.B3.CN2 (5x), NV.NSMTC.G1.CHZ, NV.NSMTC.G1.CHN, 
+                        NV.NSMTC.G1.CHE, NV.NSMTC.G2.CHZ (4x), NV.NSMTC.G2.CH1 (4x), 
+                        NV.NSMTC.G2.CH2 (4x)

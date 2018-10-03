@@ -1545,8 +1545,8 @@
 
               "HNE" : &CORK1027_TitanEA_Channel #titan
                 _location_code : "W1"
-                _latitude : 47.7569541
-                _longitude : -127.73171457
+                _latitude : 47.756685
+                _longitude : -127.731932
                 _elevation : -2661.0
                 _azimuth : 90
                 _dip : 0
@@ -2061,8 +2061,8 @@
 
               "HNE" : &BarkleyUppSlope_TitanEA_Channel #titan
                 _location_code : "W1"
-                _latitude : 48.42656667
-                _longitude : -126.17456
+                _latitude : 48.42661
+                _longitude : -126.174726
                 _elevation : 392
                 _azimuth : 90
                 _dip : 0
