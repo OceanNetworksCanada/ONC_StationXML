@@ -83,6 +83,13 @@
                 _sensor_keys : "NV.BACND.Z1.BKA"
                 _datalogger_keys : "NV.BACND.Z1.BKA"
 
+              # acceleration tempeerature
+              "BKA" : 
+                <<: *APT56_Temperature_HighRate
+                _depth : 0 #m
+                _sensor_keys : "NV.BACND.Z1.BKA"
+                _datalogger_keys : "NV.BACND.Z1.BKA"
+
               #low rate
               "MNE" : &APT56_ACC_LowRate
                 _location_code : "Z1"
@@ -1632,6 +1639,12 @@
                 _sensor_keys : "NV.CBC27.Z1.BKA"
                 _datalogger_keys : "NV.CBC27.Z1.BKA"
 
+              "BKA" : 
+                <<: *APT57_Temperature_HighRate
+                _depth : 0
+                _sensor_keys : "NV.CBC27.Z1.BKA"
+                _datalogger_keys : "NV.CBC27.Z1.BKA"
+
               "MNE" : &APT57_ACC_LowRate
                 _location_code : "Z1"
                 _azimuth : 90
@@ -1758,6 +1771,13 @@
 
               # acceleration tempeerature
               "BKR" : 
+                <<: *APT55_Temperature_HighRate
+                _depth : 0 #m
+                _sensor_keys : "NV.NC89.Z1.BKA"
+                _datalogger_keys : "NV.NC89.Z1.BKA"
+
+              # acceleration tempeerature
+              "BKA" : 
                 <<: *APT55_Temperature_HighRate
                 _depth : 0 #m
                 _sensor_keys : "NV.NC89.Z1.BKA"
