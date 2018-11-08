@@ -931,7 +931,7 @@
                 _longitude : -129.098661
                 _elevation : -2195.0 #meters
                 _sample_rate : 200
-                _azimuth : 90
+                _azimuth : 310
                 _dip : 0
                 _depth : 0
                 _types :
@@ -952,13 +952,14 @@
                 
               "EHN" : 
                 <<: *KEMF_GEOSenseBH1_116
-                _azimuth : 0
+                _azimuth : 220
+                _dip : 5.2
                 _sensor_keys : "KEMF.EHN.116"
               
               "EHZ" :
                 <<: *KEMF_GEOSenseBH1_116
-                _azimuth : 0
-                _dip : -90
+                _azimuth : 220
+                _dip : -84.8
                 _sensor_keys : "KEMF.EHZ.116"
               
               "MHE" : #8sps
@@ -969,15 +970,16 @@
               "MHN" :
                 <<: *KEMF_GEOSenseBH1_116
                 _sample_rate : 8
-                _azimuth : 0
+                _azimuth : 220
+                _dip : 5.2
                 _sensor_keys : "KEMF.EHN.116"
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
               
               "MHZ" :
                 <<: *KEMF_GEOSenseBH1_116
                 _sample_rate : 8
-                _azimuth : 0
-                _dip : -90
+                _azimuth : 220
+                _dip : -84.8
                 _sensor_keys : "KEMF.EHZ.116"
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
 
@@ -987,6 +989,7 @@
               "EHE" : &KEMF_GEOSenseBH1_117
                 <<: *KEMF_GEOSenseBH1_116
                 _azimuth : 310
+                _dip : 0
                 _equipment_description :
                   - "GeoSENSE BH-1-17 (S/N 117) Corehole Seismometer - Short Period Responsivitiy from 1 Hz to 200 Hz"
                   - "Guralp DM24-MK3 Datalogger" 
@@ -999,23 +1002,26 @@
               "EHN" : 
                 <<: *KEMF_GEOSenseBH1_117
                 _azimuth : 220
+                _dip : 5.2
                 _sensor_keys : "KEMF.EHN.117"
               
               "EHZ" :
                 <<: *KEMF_GEOSenseBH1_117
                 _azimuth : 220
-                _dip : -90
+                _dip : -84.8
                 _sensor_keys : "KEMF.EHZ.117"
               
               "MHE" : #8sps
                 <<: *KEMF_GEOSenseBH1_117
                 _sample_rate : 8
+                _dip : 0
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
               
               "MHN" :
                 <<: *KEMF_GEOSenseBH1_117
                 _sample_rate : 8
                 _azimuth : 220
+                _dip : 5.2
                 _sensor_keys : "KEMF.EHN.117"
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
               
@@ -1023,7 +1029,7 @@
                 <<: *KEMF_GEOSenseBH1_117
                 _sample_rate : 8
                 _azimuth : 220
-                _dip : -90
+                _dip : -84.8
                 _sensor_keys : "KEMF.EHZ.117"
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
 
@@ -1033,17 +1039,19 @@
               "EHE" : &KEMF_GEOSenseBH1_117_100_1
                 <<: *KEMF_GEOSenseBH1_117
                 _sample_rate : 100
+                _dip : 0
                 _datalogger_keys : "RESP.XX.G0150..HHZ.CMG_DM24_MK3_FIX_49.1.500.100"
 
               "EHN" : 
                 <<: *KEMF_GEOSenseBH1_117_100_1
                 _azimuth : 220
+                _dip : 5.2
                 _sensor_keys : "KEMF.EHN.117"
               
               "EHZ" :
                 <<: *KEMF_GEOSenseBH1_117_100_1
                 _azimuth : 220
-                _dip : -90
+                _dip : -84.8
                 _sensor_keys : "KEMF.EHZ.117"
               
               "LHE" : #8sps
@@ -1055,6 +1063,7 @@
                 <<: *KEMF_GEOSenseBH1_117_100_1
                 _sample_rate : 1
                 _azimuth : 220
+                _dip : 5.2
                 _sensor_keys : "KEMF.EHN.117"
                 _datalogger_keys : "RESP.XX.G0341..LHZ.CMG_DM24_MK3_FIX_49.1.500_100_20_10_2.1"
               
@@ -1062,7 +1071,7 @@
                 <<: *KEMF_GEOSenseBH1_117_100_1
                 _sample_rate : 1
                 _azimuth : 220
-                _dip : -90
+                _dip : -84.8
                 _sensor_keys : "KEMF.EHZ.117"
                 _datalogger_keys : "RESP.XX.G0341..LHZ.CMG_DM24_MK3_FIX_49.1.500_100_20_10_2.1"
 
@@ -1083,7 +1092,7 @@
               "EHE" : &KEMO_GEOSenseBH1_115
                 _location_code : ""
                 _sample_rate : 200
-                _azimuth : 90
+                _azimuth : 131
                 _dip : 0
                 _depth : 0
                 _types :
@@ -1104,13 +1113,14 @@
 
               "EHN" : 
                 <<: *KEMO_GEOSenseBH1_115
-                _azimuth : 0
+                _azimuth : 41
+                _dip : 5.1
                 _sensor_keys : "KEMO.EHN.115"
 
               "EHZ" : 
                 <<: *KEMO_GEOSenseBH1_115
-                _azimuth : 0
-                _dip : -90
+                _azimuth : 41
+                _dip : -84.9
                 _sensor_keys : "KEMO.EHZ.115"
 
               "MHE" : 
@@ -1121,15 +1131,16 @@
               "MHN" :
                 <<: *KEMO_GEOSenseBH1_115
                 _sample_rate : 8
-                _azimuth : 0
+                _azimuth : 41
+                _dip : 5.1
                 _sensor_keys : "KEMO.EHN.115"
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
 
               "MHZ" : 
                 <<: *KEMO_GEOSenseBH1_115
                 _sample_rate : 8
-                _azimuth : 0
-                _dip : -90
+                _azimuth : 41
+                _dip : -84.9
                 _sensor_keys : "KEMO.EHZ.115"
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
         
