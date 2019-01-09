@@ -210,9 +210,44 @@
                 _azimuth : 235
                 _dip : -90
 
+          "2018-07-30T07:14:55.000000Z_None":
+            Channels : #channel codes
+              "HNE" : &CQS64_TitanEA_787
+                _location_code : "W1" 
+                _azimuth : 90
+                _dip : 0
+                _depth : 0
+                _sample_rate : 200
+                _latitude : 48.69971814
+                _longitude : -126.87261781
+                _elevation : -1318 #meters
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_description : 
+                  - "Nanometrics TitanEA (S/N 000787) deployed in caisson, and replaced TitanEA S/N 000145."
+                  - "The dataloggers in the Titan SMA digital accelerometers are Centaur dataloggers with a single preamp gain choice of 1 (40 Vpp)."
+                _equipment_serial : 
+                  - "000787"
+                  - "787"
+                _sensor_keys : "RESP.XX.NS128..BNZ.Titan.DC_430.20V.2G" 
+                _datalogger_keys : "RESP.XX.NN429..HHZ.CENTAUR.1.200.OFF"
+                _sensor_type : "TitanEA3_5"
+                _sensor_description : "Nanometrics TitanEA Accelerograph 2g/Built-in datalogger"
+                _dataSearchURL : "http://data.oceannetworks.ca/DataSearch?location=CQS64&deviceCategory=ACCELEROMETER"
+                _deviceURL : "http://data.oceannetworks.ca/DeviceListing?DeviceId=24432"
+                _calibration_units : "UNKNOWN"
+
+              "HNN" : 
+                <<: *CQS64_TitanEA_787
+                _azimuth : 0
+
+              "HNZ" : 
+                <<: *CQS64_TitanEA_787
+                _azimuth : 0
+                _dip : -90
 
 
-          "2017-06-13T22:32:38.000000Z_None" :
+          "2017-06-13T22:32:38.000000Z_2018-07-30T07:14:54.000000Z" :
             Channels : #channel codes
 
               "HNE" : &CQS64_TitanEA_Channel #titan
@@ -247,6 +282,8 @@
                 <<: *CQS64_TitanEA_Channel
                 _azimuth : 0
                 _dip : -90
+
+
 
       "ENHR" : 
         From : "2018-06-19T00:00:00.000000Z"
@@ -520,8 +557,9 @@
         _description : "Station KEMF is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : 
 
-          "2018-08-10T00:00:00.000000Z_None" : 
+          "2018-08-10T00:00:00.000000Z_2018-11-29T00:00:00.000000Z" : 
             #200 sps during driver testing -- channel should disappear from IRIS once we go back to 500 sps
+            #back to 500 sps after November 29, 2018
             Channels : 
               "HNE-1" : &TR1181_200_E
                 _location_code : "W1"

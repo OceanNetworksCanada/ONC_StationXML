@@ -146,7 +146,7 @@ Calibrations :
     NS : "already_calibrated" #north-south
     UD : "already_calibrated" #up-down/vertical
 
-  # Nanometrics TitanEA3-5 (S/N 000787) ############# currently a spare
+  # Nanometrics TitanEA3-5 (S/N 000787)
   "000787" : #acceleration
     EW : "already_calibrated" #east-west
     NS : "already_calibrated" #north-south
