@@ -283,8 +283,6 @@
                 _azimuth : 0
                 _dip : -90
 
-
-
       "ENHR" : 
         From : "2018-06-19T00:00:00.000000Z"
         To : "None"
@@ -2423,6 +2421,7 @@
 
               "EHE" : &NCHR_GEOSenseBH1_118
                 <<: *NCHR_GEOSenseBH1_117
+                _sample_rate : 100
                 _latitude : 47.9736733333
                 longitude : -129.0819516667
                 _elevation : -2154.0
@@ -2438,11 +2437,13 @@
 
               "EHN" : 
                 <<: *NCHR_GEOSenseBH1_118
+                _sample_rate : 100
                 _azimuth : 109
                 _sensor_keys : "NCHR.EHN.118"
               
               "EHZ" :
                 <<: *NCHR_GEOSenseBH1_118
+                _sample_rate : 100
                 _azimuth : 109
                 _dip : -90
                 _sensor_keys : "NCHR.EHZ.118"
@@ -2472,6 +2473,7 @@
 
               "EHE" : &NCHR_GEOSenseBH1_116
                 <<: *NCHR_GEOSenseBH1_118
+                _sample_rate : 100
                 _azimuth : 200.5
                 _sensor_keys : "KEMF.EHE.116"
                 _equipment_description :
@@ -2484,16 +2486,18 @@
 
               "EHN" : 
                 <<: *NCHR_GEOSenseBH1_116
+                _sample_rate : 100
                 _azimuth : 110.5
                 _sensor_keys : "KEMF.EHN.116"
               
               "EHZ" :
                 <<: *NCHR_GEOSenseBH1_116
+                _sample_rate : 100
                 _azimuth : 110.5
                 _dip : -90
                 _sensor_keys : "KEMF.EHZ.116"
               
-              "LHE" : #8sps
+              "LHE" : 
                 <<: *NCHR_GEOSenseBH1_116
                 _sample_rate : 1
                 _datalogger_keys : "RESP.XX.G0341..LHZ.CMG_DM24_MK3_FIX_49.1.500_100_20_10_2.1"
