@@ -8,6 +8,17 @@ Calibrations :
 
   ############################## SNESORS ##############################
 
+  # Guralp very broadband seismometer (Added: 2019-02-19)
+  "T1079" : 
+    EW : 1516
+    NS : 1492
+    UD : 1498
+
+  "T5CP4" : 
+    EW : 1.020
+    NS : 1.020
+    UD : 1.022
+
   # Guralp very broadband seismometer
   "T1063" : #velocity output calibration coefficients (V/m/s)
     EW : 1434 #east-west
@@ -346,6 +357,24 @@ Calibrations :
       EW : 290.860e-06 
       NS : 291.500e-06 
       UD : 291.478e-06 
+
+  "A4274" : 
+    "CMG-1T" : 
+      EW : 3.226e-06
+      NS : 3.231e-06
+      UD : 3.226e-06
+    "CMG-5T" : 
+      EW : 3.236e-06
+      NS : 3.236e-06
+      UD : 3.238e-06
+    "MPC_1sps" : 
+      EW : 2.277e-06 #placeholder, don't know these 1sps ones; not on calibration sheet
+      NS : 2.277e-06 
+      UD : 2.277e-06  
+    "MPC-4sps" : 
+      EW : 291.41e-06
+      NS : 290.81e-06
+      UD : 291.01e-06 
 
   "A1349" :
     "BH-1" : #for velocity channels

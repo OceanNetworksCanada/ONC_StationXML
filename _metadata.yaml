@@ -1121,6 +1121,110 @@
         _geology : ""
         _description : "Station KEMO is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : 
+
+          "2019-01-01T00:00:00.000000Z_None" : 
+            Channels :
+              "HHE" : &KEMO_BBS_T1079
+                _location_code : ""
+                _sample_rate : 200
+                _azimuth : 90.0
+                _depth : 0
+                _dip : 0
+                _types : 
+                  - "GEOPHYSICAL"
+                _equipment_serial : 
+                  - "T1079"
+                  - "A4274"
+                _equipment_description : 
+                  - "CMG-1T very Broadband Ocean Bottom Sensor with three independent sensors; 360 sec to 100 Hz response."
+                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
+                _sensor_type : "CMG-1T"
+                _sensor_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
+                _sensor_keys : "RESP.XX.NS004..BHZ.CMG1T.360.1500"
+                _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200"
+                _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=21620"
+                _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=NC27&deviceCategory=BBS"
+              
+              "HHN" : 
+                <<: *KEMO_BBS_T1079
+                _azimuth : 0
+
+              "HHZ" : 
+                <<: *KEMO_BBS_T1079
+                _azimuth : 0
+                _dip : -90
+
+              "HNE" : 
+                <<: *KEMO_BBS_T1079
+                _equipment_serial : 
+                  - "T5CP4"
+                  - "A4274"
+                _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
+
+              "HNN" : 
+                <<: *KEMO_BBS_T1079
+                _azimuth : 0
+                _equipment_serial : 
+                  - "T5CP4"
+                  - "A4274"
+                _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
+
+              "HNZ" : 
+                <<: *KEMO_BBS_T1079
+                _azimuth : 0
+                _dip : -90
+                _equipment_serial : 
+                  - "T5CP4"
+                  - "A4274"
+                _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
+
+              "MHE" :
+                <<: *KEMO_BBS_T1079
+                _sample_rate : 8
+                _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
+
+              "MHN" :
+                <<: *KEMO_BBS_T1079
+                _sample_rate : 8
+                _azimuth : 0
+                _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
+                
+              "MHZ" :
+                <<: *KEMO_BBS_T1079
+                _sample_rate : 8
+                _azimuth : 0
+                _dip : -90
+                _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
+                
+              "MNE" :
+                <<: *KEMO_BBS_T1079
+                _sample_rate : 8
+                _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
+                _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
+                _equipment_serial : 
+                  - "T5CP4"
+                  - "A4274"
+                
+              "MNN" :
+                <<: *KEMO_BBS_T1079
+                _sample_rate : 8
+                _azimuth : 0
+                _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
+                _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
+                _equipment_serial : 
+                  - "T5CP4"
+                  - "A4274"
+
+              "MNZ" :
+                <<: *KEMO_BBS_T1079
+                _sample_rate : 8
+                _azimuth : 0
+                _dip : -90
+                _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
+                _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
+                _equipment_serial : 
+                  - "T5CP4"
+                  - "A4274"
           
           "2016-06-18T00:00:00.000000Z_None" : 
             Channels :
