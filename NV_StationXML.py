@@ -37,11 +37,31 @@ def get_response(_sensor_resp_filename, _dl_resp_filename):
     _dl_resp.instrument_sensitivity.input_units_description = _sensor_resp.instrument_sensitivity.input_units_description
     _response = _dl_resp
     
+    if _response.instrument_sensitivity.output_units=="COUNTS" or _response.instrument_sensitivity.output_units == "COUNT":
+        _response.instrument_sensitivity.output_units = _response.instrument_sensitivity.output_units.lower()
+    if _response.instrument_sensitivity.input_units=="COUNTS" or _response.instrument_sensitivity.input_units == "COUNT":
+        _response.instrument_sensitivity.input_units = _response.instrument_sensitivity.input_units.lower()
+        
+    for stage in _response.response_stages:
+        #correct for COUNTS units name
+        if stage.output_units=="COUNTS" or stage.output_units=="COUNT":
+            stage.output_units = stage.output_units.lower()
+            stage.output_units_description = "Digital Counts"
+        if stage.input_units=="COUNTS" or stage.output_units=="COUNT":
+            stage.input_units = stage.input_units.lower()
+            stage.input_units_description = "Digital Counts"
+        #correct for Celsius (C) units name
+        if stage.output_units=="C":
+            stage.output_units = "degC"
+        if stage.input_units=="C":
+            stage.input_units = "degC"
+            
     #special condition for SA ULN 40 Vpg
     if Channels[channel]["_equipment_serial"][0].endswith("40Vpg"):
         #ensure this change is made to an unused response stage
         for stage in _response.response_stages:
-            if stage.stage_gain == 1 and stage.input_units == 'COUNTS' and stage.output_units == 'COUNTS':
+                
+            if stage.stage_gain == 1 and stage.input_units == 'counts' and stage.output_units == 'counts':
                 stage.stage_gain = stage.stage_gain * float(2/3)
                 break
     
@@ -196,6 +216,8 @@ for network in bank['Networks'].keys():
                                 external_references = [ExternalReference(Channels[channel]["_dataSearchURL"], 'Data Search URL.'),
                                                        ExternalReference(Channels[channel]["_deviceURL"], 'Device URL.')]
                                 )
+                        if _channel.calibration_units=="COUNTS" or _channel.calibration_units=="COUNT": 
+                            _channel.calibration_units = _channel.calibration_units.lower()
                         _station.channels.append(_channel)
                         
                         print("Channel {}.{} appended successfully to Inventory.".format(_channel_code, Channels[channel]['_location_code']))

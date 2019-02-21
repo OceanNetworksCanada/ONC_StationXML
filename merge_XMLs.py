@@ -9,7 +9,7 @@ Changes need to be commited, and pushed to the online respository.
 
 Merges the NV_ONC.xml file written by NV_StationXML.py with the original StationXML
     downloaded from IRIS for the NEPTUNE seismic network (NV). In this way, 
-    channels for station not accounted for in _metadata.yaml are not missed when 
+    channels for a station not accounted for in _metadata.yaml are not missed when 
     the updated metadata StationXML file is returned to IRIS.
 
 """
@@ -29,6 +29,26 @@ for i, stn in enumerate(old_inv[0].get_contents()['stations']):
             newstas = new_inv[0].get_contents()['stations']
             for k in range(len(newstas)):
                 if newstas[k].split()[0].split('.')[1] == stn:
+                    for rs in channel.response.response_stages:
+                        #correct for COUNTS units name
+                        if rs.output_units=="COUNTS" or rs.output_units=="COUNT":
+                            rs.output_units = rs.output_units.lower()
+                            rs.output_units_description = "Digital Counts"
+                        if rs.input_units=="COUNTS" or rs.output_units=="COUNT":
+                            rs.input_units = rs.input_units.lower()
+                            rs.input_units_description = "Digital Counts"
+                        #correct for Celsius (C) units name
+                        if rs.output_units=="C":
+                            rs.output_units = "degC"
+                        if rs.input_units=="C":
+                            rs.input_units = "degC"
+                    
+                    if channel.response.instrument_sensitivity.output_units=="COUNTS" or channel.response.instrument_sensitivity.output_units == "COUNT":
+                        channel.response.instrument_sensitivity.output_units = channel.response.instrument_sensitivity.output_units.lower()
+                    if channel.response.instrument_sensitivity.input_units=="COUNTS" or channel.response.instrument_sensitivity.input_units == "COUNT":
+                        channel.response.instrument_sensitivity.input_units = channel.response.instrument_sensitivity.input_units.lower()
+                    if channel.calibration_units=="COUNTS" or channel.calibration_units=="COUNT": 
+                        channel.calibration_units = channel.calibration_units.lower()
                     new_inv[0][k].channels.append(channel)
             
 print(new_inv)

@@ -351,39 +351,39 @@
               "BNE" : 
                 <<: *TR1160_E
                 _sample_rate : 25
-                _sensor_keys : "StationXMLInventory.ENHR..BNE"
-                _datalogger_keys : "StationXMLInventory.ENHR..BNE"
+                _sensor_keys : "NV.ENHR..BNE"
+                _datalogger_keys : "NV.ENHR..BNE"
 
               "BNN" : 
                 <<: *TR1160_N
                 _sample_rate : 25
-                _sensor_keys : "StationXMLInventory.ENHR..BNN"
-                _datalogger_keys : "StationXMLInventory.ENHR..BNN"
+                _sensor_keys : "NV.ENHR..BNN"
+                _datalogger_keys : "NV.ENHR..BNN"
                 
               "BNZ" : 
                 <<: *TR1160_Z
                 _location_code : ""
                 _sample_rate : 25
-                _sensor_keys : "StationXMLInventory.ENHR..BNZ"
-                _datalogger_keys : "StationXMLInventory.ENHR..BNZ"
+                _sensor_keys : "NV.ENHR..BNZ"
+                _datalogger_keys : "NV.ENHR..BNZ"
                 
               "MNE" : 
                 <<: *TR1160_E
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.ENHR..MNE"
-                _datalogger_keys : "StationXMLInventory.ENHR..MNE"
+                _sensor_keys : "NV.ENHR..MNE"
+                _datalogger_keys : "NV.ENHR..MNE"
                 
               "MNN" : 
                 <<: *TR1160_N
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.ENHR..MNN"
-                _datalogger_keys : "StationXMLInventory.ENHR..MNN"
+                _sensor_keys : "NV.ENHR..MNN"
+                _datalogger_keys : "NV.ENHR..MNN"
                 
               "MNZ" : 
                 <<: *TR1160_Z
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.ENHR..MNZ"
-                _datalogger_keys : "StationXMLInventory.ENHR..MNZ"
+                _sensor_keys : "NV.ENHR..MNZ"
+                _datalogger_keys : "NV.ENHR..MNZ"
 
       "ENWF" :
         From : "2016-06-21T00:00:00.000000Z"
@@ -547,9 +547,9 @@
       "KEMF" :
         From : "2010-09-30T00:00:00.000000Z"
         To : "None"
-        _latitude : 47.9737
-        _longitude : -129.0818
-        _elevation : -2154.0 #meters
+        _latitude : 47.948572
+        _longitude : -129.098661
+        _elevation : -2195.0 #meters
         _site : "Endeavour Main Field"
         _geology : ""
         _description : "Station KEMF is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
@@ -727,43 +727,43 @@
                 <<: *TR1181_E
                 _location_code : "Z1"
                 _sample_rate : 100
-                _sensor_keys : "StationXMLInventory.KEMF.Z1.HNE"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z1.HNE"
+                _sensor_keys : "KEMF.Z1.HNE_100"
+                _datalogger_keys : "KEMF.Z1.HNE_100"
               
               "HNN-1" :
                 <<: *TR1181_N
                 _location_code : "Z1"
                 _sample_rate : 100
-                _sensor_keys : "StationXMLInventory.KEMF.Z1.HNN"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z1.HNN"
+                _sensor_keys : "KEMF.Z1.HNN_100"
+                _datalogger_keys : "KEMF.Z1.HNN_100"
 
               "HNZ-1" :
                 <<: *TR1181_Z
                 _location_code : "Z1"
                 _sample_rate : 100
-                _sensor_keys : "StationXMLInventory.KEMF.Z1.HNZ"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z1.HNZ"
+                _sensor_keys : "KEMF.Z1.HNZ_100"
+                _datalogger_keys : "KEMF.Z1.HNZ_100"
 
               "MNE-1Z" : 
                 <<: *TR1181_E
                 _location_code : "Z1"
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.KEMF.Z1.MNE"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z1.MNE"
+                _sensor_keys : "KEMF.Z1.MNE_5"
+                _datalogger_keys : "KEMF.Z1.MNE_5"
 
               "MNN-1Z" : 
                 <<: *TR1181_N
                 _location_code : "Z1"
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.KEMF.Z1.MNN"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z1.MNN"
+                _sensor_keys : "KEMF.Z1.MNN_5"
+                _datalogger_keys : "KEMF.Z1.MNN_5"
 
               "MNZ-1Z" : 
                 <<: *TR1181_Z
                 _location_code : "Z1"
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.KEMF.Z1.MNZ"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z1.MNZ"
+                _sensor_keys : "KEMF.Z1.MNZ_5"
+                _datalogger_keys : "KEMF.Z1.MNZ_5"
 
               "CNE-2" : &TR1182_E
                 _location_code : "W2"
@@ -823,43 +823,43 @@
                 <<: *TR1182_E
                 _location_code : "Z2"
                 _sample_rate : 100
-                _sensor_keys : "StationXMLInventory.KEMF.Z2.HNE"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z2.HNE"
+                _sensor_keys : "KEMF.Z2.HNE_100"
+                _datalogger_keys : "KEMF.Z2.HNE_100"
               
               "HNN-2" :
                 <<: *TR1182_N
                 _location_code : "Z2"
                 _sample_rate : 100
-                _sensor_keys : "StationXMLInventory.KEMF.Z2.HNN"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z2.HNN"
+                _sensor_keys : "KEMF.Z2.HNN_100"
+                _datalogger_keys : "KEMF.Z2.HNN_100"
 
               "HNZ-2" :
                 <<: *TR1182_Z
                 _location_code : "Z2"
                 _sample_rate : 100
-                _sensor_keys : "StationXMLInventory.KEMF.Z2.HNZ"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z2.HNZ"
+                _sensor_keys : "KEMF.Z2.HNZ_100"
+                _datalogger_keys : "KEMF.Z2.HNZ_100"
 
               "MNE-2Z" : 
                 <<: *TR1182_E
                 _location_code : "Z2"
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.KEMF.Z2.MNE"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z2.MNE"
+                _sensor_keys : "KEMF.Z2.MNE_5"
+                _datalogger_keys : "KEMF.Z2.MNE_5"
 
               "MNN-2Z" : 
                 <<: *TR1182_N
                 _location_code : "Z2"
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.KEMF.Z2.MNN"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z2.MNN"
+                _sensor_keys : "KEMF.Z2.MNN_5"
+                _datalogger_keys : "KEMF.Z2.MNN_5"
 
               "MNZ-2Z" : 
                 <<: *TR1182_Z
                 _location_code : "Z2"
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.KEMF.Z2.MNZ"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z2.MNZ"
+                _sensor_keys : "KEMF.Z2.MNZ_5"
+                _datalogger_keys : "KEMF.Z2.MNZ_5"
                 
 
               "CNE-3" : &TR1183_E
@@ -920,52 +920,49 @@
                 <<: *TR1183_E
                 _location_code : "Z3"
                 _sample_rate : 100
-                _sensor_keys : "StationXMLInventory.KEMF.Z3.HNE"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z3.HNE"
+                _sensor_keys : "KEMF.Z3.HNE_100"
+                _datalogger_keys : "KEMF.Z3.HNE_100"
               
               "HNN-3" :
                 <<: *TR1183_N
                 _location_code : "Z3"
                 _sample_rate : 100
-                _sensor_keys : "StationXMLInventory.KEMF.Z3.HNN"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z3.HNN"
+                _sensor_keys : "KEMF.Z3.HNN_100"
+                _datalogger_keys : "KEMF.Z3.HNN_100"
 
               "HNZ-3" :
                 <<: *TR1183_Z
                 _location_code : "Z3"
                 _sample_rate : 100
-                _sensor_keys : "StationXMLInventory.KEMF.Z3.HNZ"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z3.HNZ"
+                _sensor_keys : "KEMF.Z3.HNZ_100"
+                _datalogger_keys : "KEMF.Z3.HNZ_100"
 
               "MNE-3Z" : 
                 <<: *TR1183_E
                 _location_code : "Z3"
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.KEMF.Z3.MNE"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z3.MNE"
+                _sensor_keys : "KEMF.Z3.MNE_5"
+                _datalogger_keys : "KEMF.Z3.MNE_5"
 
               "MNN-3Z" : 
                 <<: *TR1183_N
                 _location_code : "Z3"
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.KEMF.Z3.MNN"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z3.MNN"
+                _sensor_keys : "KEMF.Z3.MNN_5"
+                _datalogger_keys : "KEMF.Z3.MNN_5"
 
               "MNZ-3Z" : 
                 <<: *TR1183_Z
                 _location_code : "Z3"
                 _sample_rate : 5
-                _sensor_keys : "StationXMLInventory.KEMF.Z3.MNZ"
-                _datalogger_keys : "StationXMLInventory.KEMF.Z3.MNZ"
+                _sensor_keys : "KEMF.Z3.MNZ_5"
+                _datalogger_keys : "KEMF.Z3.MNZ_5"
 
           "2014-05-19T02:49:51.000000Z_None" : 
             Channels : 
 
               "EHE" : &KEMF_GEOSenseBH1_116
                 _location_code : ""
-                _latitude : 47.948572
-                _longitude : -129.098661
-                _elevation : -2195.0 #meters
                 _sample_rate : 200
                 _azimuth : 310
                 _dip : 0
@@ -1226,7 +1223,7 @@
                   - "T5CP4"
                   - "A4274"
           
-          "2016-06-18T00:00:00.000000Z_None" : 
+          "2016-06-18T00:00:00.000000Z_2018-12-31T23:59:59.000000Z" : 
             Channels :
 
               "EHE" : &KEMO_GEOSenseBH1_115
@@ -1365,14 +1362,17 @@
               "MNE" : 
                 <<: *NC27_T5O77_E_ACC
                 _sample_rate : 2
+                _datalogger_keys : "RESP.XX.G0316..MHZ.CMG_DM24_MK3_FIX_24.1.1000_200_100_20_10.2"
 
               "MNN" :
                 <<: *NC27_T5O77_N_ACC
                 _sample_rate : 2
+                _datalogger_keys : "RESP.XX.G0316..MHZ.CMG_DM24_MK3_FIX_24.1.1000_200_100_20_10.2"
 
               "MNZ" : 
                 <<: *NC27_T5O77_Z_ACC
                 _sample_rate : 2
+                _datalogger_keys : "RESP.XX.G0316..MHZ.CMG_DM24_MK3_FIX_24.1.1000_200_100_20_10.2"
 
           "2010-06-10T17:43:00.000000Z_2010-10-05T23:59:59.000000Z" :
             Channels : 
@@ -1688,7 +1688,7 @@
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=21620"
 
       "CBC27" : 
-        From : "2018-06-24T00:00:00.000000Z"
+        From : "2018-06-23T23:59:59.000000Z"
         To : "None"
         _latitude : 47.756717
         _longitude : -127.731602
@@ -1697,9 +1697,9 @@
         _geology : ""
         _description : "Station CBC27 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : 
-
-          "2018-06-19T00:00:00.000000Z_None" : 
-            Channels : 
+          
+          "2018-06-24T00:00:00.000000Z_None" : 
+            Channels : #channel codes
 
               "HNE" : &CORK1027_TitanEA_Channel #titan
                 _location_code : "W1"
@@ -1732,10 +1732,6 @@
                 <<: *CORK1027_TitanEA_Channel
                 _azimuth : 0
                 _dip : -90
-
-
-          "2018-06-24T00:00:00.000000Z_None" : 
-            Channels : #channel codes
 
               "BNE" : &APT57_ACC_HighRate
                 _location_code : "Z1"
@@ -2331,14 +2327,17 @@
               "MNE" : 
                 <<: *NCBC_T1064_E_ACC
                 _sample_rate : 2
+                _datalogger_keys : "RESP.XX.G0316..MHZ.CMG_DM24_MK3_FIX_24.1.1000_200_100_20_10.2"
 
               "MNN" :
                 <<: *NCBC_T1064_N_ACC
                 _sample_rate : 2
+                _datalogger_keys : "RESP.XX.G0316..MHZ.CMG_DM24_MK3_FIX_24.1.1000_200_100_20_10.2"
 
               "MNZ" : 
                 <<: *NCBC_T1064_Z_ACC
                 _sample_rate : 2
+                _datalogger_keys : "RESP.XX.G0316..MHZ.CMG_DM24_MK3_FIX_24.1.1000_200_100_20_10.2"
 
           "2010-09-11T01:15:00.000000Z_2013-03-01T19:59:59.000000Z" : 
             Channels : #100 and 1 Hz
@@ -2531,6 +2530,7 @@
                 _elevation : -2154.0
                 _azimuth : 199
                 _sensor_keys : "NCHR.EHE.118"
+                _datalogger_keys : "RESP.XX.G0150..HHZ.CMG_DM24_MK3_FIX_49.1.500.100"
                 _equipment_description :
                   - "GeoSENSE BH-1-18 (S/N 118) Corehole Seismometer - Short Period Responsivitiy from 1 Hz to 200 Hz"
                   - "Guralp DM24-MK3 Datalogger" 
@@ -2544,6 +2544,7 @@
                 _sample_rate : 100
                 _azimuth : 109
                 _sensor_keys : "NCHR.EHN.118"
+                _datalogger_keys : "RESP.XX.G0150..HHZ.CMG_DM24_MK3_FIX_49.1.500.100"
               
               "EHZ" :
                 <<: *NCHR_GEOSenseBH1_118
@@ -2551,6 +2552,7 @@
                 _azimuth : 109
                 _dip : -90
                 _sensor_keys : "NCHR.EHZ.118"
+                _datalogger_keys : "RESP.XX.G0150..HHZ.CMG_DM24_MK3_FIX_49.1.500.100"
               
               "LHE" : #8sps
                 <<: *NCHR_GEOSenseBH1_118
@@ -2572,7 +2574,7 @@
                 _sensor_keys : "NCHR.EHZ.118"
                 _datalogger_keys : "RESP.XX.G0341..LHZ.CMG_DM24_MK3_FIX_49.1.500_100_20_10_2.1"
 
-          "2010-10-02T18:34:09.000000Z_2011-09-13T23:59:59.000000Z" : #116
+          "2010-10-04T00:00:00.000000Z_2011-09-13T23:59:59.000000Z" : #116
             Channels : 
 
               "EHE" : &NCHR_GEOSenseBH1_116
@@ -2580,6 +2582,7 @@
                 _sample_rate : 100
                 _azimuth : 200.5
                 _sensor_keys : "KEMF.EHE.116"
+                _datalogger_keys : "RESP.XX.G0150..HHZ.CMG_DM24_MK3_FIX_49.1.500.100"
                 _equipment_description :
                   - "GeoSENSE BH-1-16 (S/N 116) Corehole Seismometer - Short Period Responsivitiy from 1 Hz to 200 Hz"
                   - "Guralp DM24-MK3 Datalogger" 
@@ -2593,6 +2596,7 @@
                 _sample_rate : 100
                 _azimuth : 110.5
                 _sensor_keys : "KEMF.EHN.116"
+                _datalogger_keys : "RESP.XX.G0150..HHZ.CMG_DM24_MK3_FIX_49.1.500.100"
               
               "EHZ" :
                 <<: *NCHR_GEOSenseBH1_116
@@ -2600,6 +2604,7 @@
                 _azimuth : 110.5
                 _dip : -90
                 _sensor_keys : "KEMF.EHZ.116"
+                _datalogger_keys : "RESP.XX.G0150..HHZ.CMG_DM24_MK3_FIX_49.1.500.100"
               
               "LHE" : 
                 <<: *NCHR_GEOSenseBH1_116

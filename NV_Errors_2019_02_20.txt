@@ -1,0 +1,66 @@
+402:Error:NV/CQS64//B3/LE3[2016-07-01T00:00Z[UTC]2599-12-31T23:59:59Z[UTC]]:[stage 1] invalid inputUnit C
+402:Error:NV/CQS64//B3/LE4[2016-07-01T00:00Z[UTC]2599-12-31T23:59:59Z[UTC]]:[stage 1] invalid inputUnit C
+211:Error:NV/KEMO/[2016-06-18T00:00Z[UTC]null]:[(MHE|2016-06-18T00:00:00|null)(MHE|2019-01-01T00:00:00|null)][(MHN|2016-06-18T00:00:00|null)(MHN|2019-01-01T00:00:00|null)][(MHZ|2016-06-18T00:00:00|null)(MHZ|2019-01-01T00:00:00|null)]
+212:Error:NV/CBC27/[2018-06-24T00:00Z[UTC]null]:Channel startDate 2018-06-19T00:00:00 cannot occur before Station startDate 2018-06-24T00:00:00
+212:Error:NV/NCHR/[2010-10-04T00:00Z[UTC]null]:Channel startDate 2010-10-02T18:34:09 cannot occur before Station startDate 2010-10-04T00:00:00
+421:Error:NV/ENHR///BNE[2018-06-19T00:00Z[UTC]null]:samplerate: 25.0!= frequency/factor 200.0
+421:Error:NV/ENHR///BNN[2018-06-19T00:00Z[UTC]null]:samplerate: 25.0!= frequency/factor 200.0
+421:Error:NV/ENHR///BNZ[2018-06-19T00:00Z[UTC]null]:samplerate: 25.0!= frequency/factor 200.0
+421:Error:NV/ENHR///MNE[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/ENHR///MNN[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/ENHR///MNZ[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/KEMF//Z1/HNE[2018-06-19T00:00Z[UTC]null]:samplerate: 100.0!= frequency/factor 500.0
+421:Error:NV/KEMF//Z1/HNN[2018-06-19T00:00Z[UTC]null]:samplerate: 100.0!= frequency/factor 500.0
+421:Error:NV/KEMF//Z1/HNZ[2018-06-19T00:00Z[UTC]null]:samplerate: 100.0!= frequency/factor 500.0
+421:Error:NV/KEMF//Z1/MNE[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/KEMF//Z1/MNN[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/KEMF//Z1/MNZ[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/KEMF//Z2/HNE[2018-06-19T00:00Z[UTC]null]:samplerate: 100.0!= frequency/factor 500.0
+421:Error:NV/KEMF//Z2/HNN[2018-06-19T00:00Z[UTC]null]:samplerate: 100.0!= frequency/factor 500.0
+421:Error:NV/KEMF//Z2/HNZ[2018-06-19T00:00Z[UTC]null]:samplerate: 100.0!= frequency/factor 500.0
+421:Error:NV/KEMF//Z2/MNE[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/KEMF//Z2/MNN[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/KEMF//Z2/MNZ[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/KEMF//Z3/HNE[2018-06-19T00:00Z[UTC]null]:samplerate: 100.0!= frequency/factor 500.0
+421:Error:NV/KEMF//Z3/HNN[2018-06-19T00:00Z[UTC]null]:samplerate: 100.0!= frequency/factor 500.0
+421:Error:NV/KEMF//Z3/HNZ[2018-06-19T00:00Z[UTC]null]:samplerate: 100.0!= frequency/factor 500.0
+421:Error:NV/KEMF//Z3/MNE[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/KEMF//Z3/MNN[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/KEMF//Z3/MNZ[2018-06-19T00:00Z[UTC]null]:samplerate: 5.0!= frequency/factor 8.0
+421:Error:NV/NC27///MNE[2009-09-14T00:00Z[UTC]2010-06-10T17:42:59Z[UTC]]:samplerate: 2.0!= frequency/factor 100.0
+421:Error:NV/NC27///MNN[2009-09-14T00:00Z[UTC]2010-06-10T17:42:59Z[UTC]]:samplerate: 2.0!= frequency/factor 100.0
+421:Error:NV/NC27///MNZ[2009-09-14T00:00Z[UTC]2010-06-10T17:42:59Z[UTC]]:samplerate: 2.0!= frequency/factor 100.0
+421:Error:NV/NCBC///MNE[2009-09-07T00:00Z[UTC]2010-09-11T01:14Z[UTC]]:samplerate: 2.0!= frequency/factor 100.0
+421:Error:NV/NCBC///MNN[2009-09-07T00:00Z[UTC]2010-09-11T01:14Z[UTC]]:samplerate: 2.0!= frequency/factor 100.0
+421:Error:NV/NCBC///MNZ[2009-09-07T00:00Z[UTC]2010-09-11T01:14Z[UTC]]:samplerate: 2.0!= frequency/factor 100.0
+421:Error:NV/NCHR///EHE[2011-09-14T18:48:50Z[UTC]2016-06-19T20:02:26Z[UTC]]:samplerate: 100.0!= frequency/factor 200.0
+421:Error:NV/NCHR///EHN[2011-09-14T18:48:50Z[UTC]2016-06-19T20:02:26Z[UTC]]:samplerate: 100.0!= frequency/factor 200.0
+421:Error:NV/NCHR///EHZ[2011-09-14T18:48:50Z[UTC]2016-06-19T20:02:26Z[UTC]]:samplerate: 100.0!= frequency/factor 200.0
+421:Error:NV/NCHR///EHE[2010-10-02T18:34:09Z[UTC]2011-09-13T23:59:59Z[UTC]]:samplerate: 100.0!= frequency/factor 200.0
+421:Error:NV/NCHR///EHN[2010-10-02T18:34:09Z[UTC]2011-09-13T23:59:59Z[UTC]]:samplerate: 100.0!= frequency/factor 200.0
+421:Error:NV/NCHR///EHZ[2010-10-02T18:34:09Z[UTC]2011-09-13T23:59:59Z[UTC]]:samplerate: 100.0!= frequency/factor 200.0
+422:Error:NV/ENHR///BNE[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/ENHR///BNN[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/ENHR///BNZ[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/ENHR///MNE[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/ENHR///MNN[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/ENHR///MNZ[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z1/HNE[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z1/HNN[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z1/HNZ[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z1/MNE[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z1/MNN[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z1/MNZ[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z2/HNE[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z2/HNN[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z2/HNZ[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z2/MNE[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z2/MNN[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z2/MNZ[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z3/HNE[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z3/HNN[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z3/HNZ[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z3/MNE[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z3/MNN[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+422:Error:NV/KEMF//Z3/MNZ[2018-06-19T00:00Z[UTC]null]:stage number: 2 inputSampleRate=5000.0 : inputSampleRateByFactor=1.0
+222:Error:NV/KEMF/[2010-09-30T00:00Z[UTC]null]:Expected a distance difference of less than 1 between KEMF and HNE:W1 but was 2.9682286610499045
