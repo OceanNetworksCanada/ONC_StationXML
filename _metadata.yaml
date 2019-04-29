@@ -16,8 +16,8 @@
       "BACND" : 
         From : "2018-06-22T03:00:00.000000Z"
         To : "None"
-        _latitude : 48.34594
-        _longitude : -126.158
+        _latitude : 48.345940
+        _longitude : -126.158000
         _elevation : -643.3 #meters
         _site : "Barkley Canyon Node"
         _geology : ""
@@ -240,8 +240,8 @@
                 _dip : 0
                 _depth : 0
                 _sample_rate : 200
-                _latitude : 48.69965621
-                _longitude : -126.87264068
+                _latitude : 48.699656
+                _longitude : -126.872641
                 _elevation : -1318.0 #meters
                 _types : 
                   - "GEOPHYSICAL"
@@ -1038,8 +1038,8 @@
       "KEMO" :
         From : "2016-06-18T00:00:00.000000Z"
         To : "None"
-        _latitude : 47.9241016667
-        _longitude : -129.1082
+        _latitude : 47.924102
+        _longitude : -129.108200
         _elevation : -2270.0 #meters
         _site : "Mothra Field"
         _geology : ""
@@ -1217,7 +1217,7 @@
               "HHE" : &NC27_T1067_E
                 _location_code : ""
                 _sample_rate : 100
-                _azimuth : 94.20
+                _azimuth : 94.2
                 _depth : 0
                 _dip : 0
                 _types : 
@@ -1264,7 +1264,7 @@
               
               "HNN" : &NC27_T5O77_N_ACC
                 <<: *NC27_T5O77_E_ACC
-                _azimuth : 4.20
+                _azimuth : 4.2
 
               "HNZ" : &NC27_T5O77_Z_ACC
                 <<: *NC27_T5O77_N_ACC
@@ -1484,7 +1484,7 @@
 
               "HHE" : 
                 <<: *NC27_T1067_E
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 200
@@ -1493,7 +1493,7 @@
 
               "HHN" : 
                 <<: *NC27_T1067_N
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 200
@@ -1502,7 +1502,7 @@
 
               "HHZ" : 
                 <<: *NC27_T1067_Z
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 200
@@ -1511,7 +1511,7 @@
 
               "HNE" : 
                 <<: *NC27_T5O77_E_ACC
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 200
@@ -1520,7 +1520,7 @@
 
               "HNN" : 
                 <<: *NC27_T5O77_N_ACC
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 200
@@ -1529,7 +1529,7 @@
 
               "HNZ" : 
                 <<: *NC27_T5O77_Z_ACC
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 200
@@ -1538,7 +1538,7 @@
 
               "MHE" : 
                 <<: *NC27_T1067_E
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 8
@@ -1547,7 +1547,7 @@
 
               "MHN" : 
                 <<: *NC27_T1067_N
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 8
@@ -1556,7 +1556,7 @@
 
               "MHZ" : 
                 <<: *NC27_T1067_Z
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 8
@@ -1565,7 +1565,7 @@
 
               "MNE" : 
                 <<: *NC27_T5O77_E_ACC
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 8
@@ -1574,7 +1574,7 @@
 
               "MNN" : 
                 <<: *NC27_T5O77_N_ACC
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 8
@@ -1583,7 +1583,7 @@
 
               "MNZ" : 
                 <<: *NC27_T5O77_Z_ACC
-                _latitude : 47.76258
+                _latitude : 47.762580
                 _longitude : -127.758102
                 _elevation : -2656.0
                 _sample_rate : 8
@@ -1757,8 +1757,8 @@
             Channels : #channel codes
               #high rate
               "BNE" : &APT55_ACC_HighRate
-                _latitude : 48.6709
-                _longitude : -126.8481
+                _latitude : 48.670900
+                _longitude : -126.848100
                 _elevation : -1283.0
                 _location_code : "Z1"
                 _azimuth : 90
@@ -1886,8 +1886,8 @@
                 <<: *CQS64_TitanEA_Channel
                 _sample_rate : 200
                 _azimuth : 94
-                _latitude : 48.67047314
-                _longitude : -126.84770139
+                _latitude : 48.670473
+                _longitude : -126.847701
                 _elevation : -1259.0 #meters
                 _types : 
                   - "GEOPHYSICAL"
@@ -1909,8 +1909,8 @@
 
               "HHE" : &NC89_CMG-1T_Channel #seismometer; 200 sps
                 _location_code : ""
-                _latitude : 48.6705366667
-                _longitude : -126.8487666667
+                _latitude : 48.670537
+                _longitude : -126.848767
                 _elevation : -1256.0
                 _azimuth : 102
                 _dip : 0
@@ -2100,9 +2100,9 @@
 
               "HNE" : &BarkleyUppSlope_TitanEA_Channel #titan
                 _location_code : "W1"
-                _latitude : 48.42661
+                _latitude : 48.426610
                 _longitude : -126.174726
-                _elevation : 392.0
+                _elevation : -392.0
                 _azimuth : 90
                 _dip : 0
                 _depth : 0
@@ -2324,7 +2324,7 @@
         From : "2010-10-04T00:00:00.000000Z"
         To : "None"
         _latitude : 47.973752
-        _longitude : -129.08209
+        _longitude : -129.082090
         _elevation : -2152.0 #meters
         _site : "High Rise Field"
         _geology : ""
@@ -2338,7 +2338,7 @@
                 <<: *KEMF_GEOSenseBH1_117_100_1
                 _sample_rate : 200
                 _latitude : 47.973752
-                _longitude : -129.08209
+                _longitude : -129.082090
                 _elevation : -2152.0
                 _azimuth : 21
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200"
@@ -2386,8 +2386,8 @@
               "EHE" : &NCHR_GEOSenseBH1_118
                 <<: *NCHR_GEOSenseBH1_117
                 _sample_rate : 100
-                _latitude : 47.9736733333
-                longitude : -129.0819516667
+                _latitude : 47.973673
+                longitude : -129.081952
                 _elevation : -2154.0
                 _azimuth : 199
                 _sensor_keys : "NCHR.EHE.118"
@@ -2824,8 +2824,8 @@
       "BACME" :
         From : "2016-06-15T17:25:43.000000Z"
         To : "None"
-        _latitude : 48.31465395
-        _longitude : -126.05819926
+        _latitude : 48.314654
+        _longitude : -126.058199
         _elevation : -897.0 #meters
         _site : "Barkley Canyon MidEast"
         _geology : ""
