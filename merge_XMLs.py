@@ -39,9 +39,9 @@ for i, stn in enumerate(old_inv[0].get_contents()['stations']):
                             rs.input_units_description = "Digital Counts"
                         #correct for Celsius (C) units name
                         if rs.output_units=="C":
-                            rs.output_units = "degC"
+                            rs.output_units = "CELSIUS" #will be degC in the future
                         if rs.input_units=="C":
-                            rs.input_units = "degC"
+                            rs.input_units = "CELSIUS" #will be degC in the future
                     
                     if channel.response.instrument_sensitivity.output_units=="COUNTS" or channel.response.instrument_sensitivity.output_units == "COUNT":
                         channel.response.instrument_sensitivity.output_units = channel.response.instrument_sensitivity.output_units.lower()
@@ -55,7 +55,7 @@ print(new_inv)
 
 #%% Write the Inventory to StationXML
 print("Writing file.")
-new_inv.write("NV_StationXML.xml", format="stationxml", validate=True)
+new_inv.write(r"MetadataDrop\NV.xml", format="stationxml", validate=True)
 
 print("\n\nStationXML is valid? {}.".format(validate_stationxml('NV_StationXML.xml')[0]))
 if validate_stationxml('NV_StationXML.xml')[1] == ():

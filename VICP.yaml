@@ -1,0 +1,22 @@
+"Networks" :
+  "NV" :
+    From : "2009-01-01T00:00:00.000000Z"
+    To : "None"
+    _description : "NEPTUNE seismic network, owned and operatred by Ocean Networks Canada (ONC), an initiative of the University of Victoria (UVic)."
+    "Stations" : 
+
+      "VICP" : 
+        From : "2018-08-01T00:00:00.000000Z"
+        To : "None"
+        _latitude : 50.00632
+        _longitude : -126.10854
+        _elevation : 1572 #meters
+        _site : "Victoria Peak, Vancouver Island, B.C., Canada"
+        _geology : "Bedrock"
+        _description : "VICP is an Early Earthquake Warning station for the province of British Columbia."
+
+        "Epoch" : 
+          "2018-08-01T00:00:00.000000Z_None" : 
+            Channels : 
+              #high rate
+              "BNE" : &APT56_ACC_HighRate

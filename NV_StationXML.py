@@ -146,7 +146,7 @@ for network in bank['Networks'].keys():
                         _response = get_response(Channels[channel]['_sensor_keys'], Channels[channel]['_datalogger_keys'])
 
                         #apply sensor calibrations from manufacturer sheets
-                        _sc = calibrations['Calibrations'][Channels[channel]["_equipment_serial"][0]]
+                        _sc = calibrations['Calibrations'][Channels[channel]["_equipment_serial"].split("/")[0]]
                         if (_sc['EW'] and _sc['NS'] and _sc['UD']) != "already_calibrated":
                         
                             if _channel_code.endswith('E') or _channel_code.endswith('2'):
@@ -159,7 +159,7 @@ for network in bank['Networks'].keys():
                             _response.response_stages[0].stage_gain = _sensor_calibs
                         
                         #apply digitizer/datalogger calibrations from manufacturer sheets
-                        _dc = calibrations['Calibrations'][Channels[channel]["_equipment_serial"][1]][Channels[channel]["_sensor_type"]]
+                        _dc = calibrations['Calibrations'][Channels[channel]["_equipment_serial"].split("/")[1]][Channels[channel]["_sensor_type"]]
                         if (_dc['EW'] and _dc['NS'] and _dc['UD']) != "already_calibrated":
                         
                             if _channel_code.endswith('E') or _channel_code.endswith('2'):

@@ -10,7 +10,7 @@
   "NV" :
     From : "2009-01-01T00:00:00.000000Z"
     To : "None"
-    _description : "Neptune observatory seismographic station sites. Owned and operatred by Ocean Networks Canada (ONC), an initiative of the University of Victoria (UVic)."
+    _description : "NEPTUNE seismic network, owned and operatred by Ocean Networks Canada (ONC), an initiative of the University of Victoria (UVic)."
     "Stations" : 
 
       "BACND" : 
@@ -35,16 +35,12 @@
                 _sample_rate : 20
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : 
-                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
-                  - "Internal logger with 50 ms timestamp resolution"
-                _equipment_serial : 
-                  - "APT56"
-                  - "LOG56"
+                _equipment_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : "APT56/LOG56"
                 _sensor_keys : "NV.BACND.Z1.BNE"
                 _datalogger_keys : "NV.BACND.Z1.BNE" 
                 _sensor_type : "APT"
-                _sensor_description : "RBR Concerto APT" 
+                _sensor_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
                 _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=BACND&deviceCategory=TILTMTR"
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24154"
                 _calibration_units : "UNKNOWN"
@@ -72,7 +68,7 @@
               # pressure temperature (-1 depth)
               "BKP" : &APT56_Temperature_HighRate
                 <<: *APT56_Pressure_HighRate
-                _depth : -1 #m
+                _depth : 1.0 #m
                 _sensor_keys : "NV.BACND.Z1.BKP"
                 _datalogger_keys : "NV.BACND.Z1.BKP"
 
@@ -99,16 +95,12 @@
                 _sample_rate : 5
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : 
-                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
-                  - "Internal logger with 50 ms timestamp resolution"
-                _equipment_serial : 
-                  - "APT56"
-                  - "LOG56"
+                _equipment_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : "APT56/LOG56"
                 _sensor_keys : "NV.BACND.Z1.MNE"
                 _datalogger_keys : "NV.BACND.Z1.MNE" 
                 _sensor_type : "APT"
-                _sensor_description : "RBR Concerto APT" 
+                _sensor_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
                 _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=BACND&deviceCategory=TILTMTR"
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24154"
                 _calibration_units : "UNKNOWN"
@@ -159,7 +151,7 @@
         _latitude : 48.699900
         _longitude : -126.872100
         _elevation : -1323.0 #meters
-        _site : "Clayoquot Slope - ODP 1364A"
+        _site : "Clayoquot Slope, North (ODP 1364A)"
         _geology : ""
         _description : "Station CQS64 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" :
@@ -174,12 +166,8 @@
                 _sample_rate : 100
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : 
-                  - "Nanometrics Trillium 120 Second Post-Hole Seismometer"
-                  - "Quanterra Q330 Digitizer;The Quanterra Q330 is an advanced IP network-aware very low-power 3-6 channel remote broadband seismic digitizer"
-                _equipment_serial : 
-                  - "U1364A"
-                  - "Q330"
+                _equipment_description : "Nanometrics Trillium 120 Second Post-Hole Seismometer/Quanterra Q330 Digitizer"
+                _equipment_serial : "U1364A/Q330"
                 _sensor_keys : "RESP.NV.CQS64..HHZ.T120PH.IRISDMC.100"
                 _datalogger_keys : "RESP.NV.CQS64..HHZ.T120PH.IRISDMC.100"
                 _sensor_type : "T120PH"
@@ -220,15 +208,11 @@
                 _sample_rate : 200
                 _latitude : 48.69971814
                 _longitude : -126.87261781
-                _elevation : -1318 #meters
+                _elevation : -1318.0 #meters
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : 
-                  - "Nanometrics TitanEA (S/N 000787) deployed in caisson, and replaced TitanEA S/N 000145."
-                  - "The dataloggers in the Titan SMA digital accelerometers are Centaur dataloggers with a single preamp gain choice of 1 (40 Vpp)."
-                _equipment_serial : 
-                  - "000787"
-                  - "787"
+                _equipment_description : "Nanometrics TitanEA Accelerograph 2g/Built-in datalogger"
+                _equipment_serial : "000787/787"
                 _sensor_keys : "RESP.XX.NS128..BNZ.Titan.DC_430.20V.2G" 
                 _datalogger_keys : "RESP.XX.NN429..HHZ.CENTAUR.1.200.OFF"
                 _sensor_type : "TitanEA3_5"
@@ -261,13 +245,8 @@
                 _elevation : -1318.0 #meters
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "Nanometrics TitanEA (S/N 000145) was deployed at the Clayoquot CORK site and subsequently moved 
-                  to Caisson site with Honeywell Orientation sensor (DeviceID: 23681) and set down right beside site of Caisson. Caisson burial not complete."
-                  - "The dataloggers in the Titan SMA digital accelerometers are Centaur dataloggers with a single preamp gain choice of 1 (40 Vpp)."
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "000145"
-                  - "145"
+                _equipment_description : "Nanometrics TitanEA Accelerograph 2g/Built-in datalogger"
+                _equipment_serial : "000145/145"
                 _sensor_keys : &TitanEA_sensorKeys "RESP.XX.NS128..BNZ.Titan.DC_430.20V.2G" 
                 _datalogger_keys : &TitanEA_dataloggerKeys "RESP.XX.NN429..HHZ.CENTAUR.1.200.OFF"
                 _sensor_type : "TitanEA3_5"
@@ -288,7 +267,7 @@
         To : "None"
         _latitude : 47.968657
         _longitude : -129.086738
-        _elevation : -2162 #meters
+        _elevation : -2162.0 #meters
         _site : "Endeavour High Rise - Godzilla"
         _geology : ""
         _description : "Station ENHR is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
@@ -305,15 +284,10 @@
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "TR1160" #accelerometer
-                  - "E056" #digitizer
-                _equipment_description : 
-                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
-                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _equipment_description : "Guralp Maris Radian BB OBS/24-bit digitiser"
+                _equipment_serial : "TR1160/E056" #digitizer
                 _sensor_type : "RADIAN"
-                _sensor_description : 
-                  - "Güralp Radian/24-bit built-in digitiser"
+                _sensor_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_keys : "StationXMLInventory.ENHR..HHE"
                 _datalogger_keys : "StationXMLInventory.ENHR..HHE"
                 _dataSearchURL : "None"
@@ -407,12 +381,8 @@
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : 
-                  - "CMG-1T very Broadband Ocean Bottom Sensor with three independent sensors; 360 sec to 100 Hz response."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
-                _equipment_serial : 
-                  - "T1065"
-                  - "A2260"
+                _equipment_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
+                _equipment_serial : "T1065/A2260"
                 _sensor_type : "CMG-1T"
                 _sensor_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_keys : "RESP.XX.NS004..BHZ.CMG1T.360.1500"
@@ -430,14 +400,11 @@
 
               "HNE" : &ENWF_T5S27_E_ACC
                 <<: *ENWF_T1065_E
-                _equipment_serial : 
-                  - "T5S27"
-                  - "A2260"
-                _equipment_description : 
-                  - "CMG-5T Strong motion sensor fixed within the same titanium housing as the Broadband Sensor."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
+                _equipment_serial : "T5S27/A2260"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
                 _sensor_type : "CMG-5T"
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
 
               "HNN" : &ENWF_T5S27_N_ACC
                 <<: *ENWF_T5S27_E_ACC
@@ -499,12 +466,8 @@
                 _depth : 0
                 _types :
                   - "GEOPHYSICAL"
-                _equipment_description :
-                  - "GeoSENSE BH-1-18 (S/N 118) Corehole Seismometer - Short Period Responsivitiy from 1 Hz to 200 Hz"
-                  - "Guralp DM24-MK3 Datalogger" 
-                _equipment_serial : 
-                  - "118" #S/N sensor
-                  - "A1352" #S/N datalogger
+                _equipment_description : "GeoSENSE BH-1 Corehole Seismometer/Guralp DM24-MK3 Datalogger"
+                _equipment_serial : "118/A1352" #S/N sensor, datalogger
                 _sensor_keys : "NCHR.EHE.118"
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200" #same datalogger as for BBSs (e.g., NC89)
                 _sensor_type : "BH-1"
@@ -563,21 +526,17 @@
                 _location_code : "W1"
                 _latitude : 47.949515
                 _longitude : -129.098677
-                _elevation : -2185 
+                _elevation : -2185.0
                 _sample_rate : 200
                 _azimuth : 90
                 _depth : 0
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "TR1181" #accelerometer
-                  - "E055" #digitizer
-                _equipment_description : 
-                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
-                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _equipment_serial : "TR1181/E055" #digitizer
+                _equipment_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_type : "RADIAN"
-                _sensor_description : "Güralp Radian/24-bit built-in digitiser"
+                _sensor_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_keys : "NV.KEMF.W1.HNE_200"
                 _datalogger_keys : "NV.KEMF.W1.HNE_200"
                 _dataSearchURL : "None"
@@ -598,22 +557,17 @@
                 _location_code : "W2"
                 _latitude : 47.949635
                 _longitude : -129.097900
-                _elevation : -2193 
+                _elevation : -2193.0 
                 _sample_rate : 200
                 _azimuth : 90
                 _depth : 0
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "TR1182" #accelerometer
-                  - "E055" #digitizer
-                _equipment_description : 
-                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
-                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _equipment_serial : "TR1182/E055" #digitizer
+                _equipment_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_type : "RADIAN"
-                _sensor_description : 
-                  - "Güralp Radian/24-bit built-in digitiser"
+                _sensor_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_keys : "NV.KEMF.W2.HNE_200"
                 _datalogger_keys : "NV.KEMF.W2.HNE_200"
                 _dataSearchURL : "None"
@@ -634,22 +588,17 @@
                 _location_code : "W3"
                 _latitude : 47.948912
                 _longitude : -129.098117
-                _elevation : -2192 
+                _elevation : -2192.0 
                 _sample_rate : 200
                 _azimuth : 90
                 _depth : 0
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "TR1183" #accelerometer
-                  - "E055" #digitizer
-                _equipment_description : 
-                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
-                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _equipment_serial : "TR1183/E055" #digitizer
+                _equipment_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_type : "RADIAN"
-                _sensor_description : 
-                  - "Güralp Radian/24-bit built-in digitiser"
+                _sensor_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_keys : "NV.KEMF.W3.HNE_200"
                 _datalogger_keys : "NV.KEMF.W3.HNE_200"
                 _dataSearchURL : "None"
@@ -674,21 +623,17 @@
                 _location_code : "W1"
                 _latitude : 47.949515
                 _longitude : -129.098677
-                _elevation : -2185 
+                _elevation : -2185.0 
                 _sample_rate : 500
                 _azimuth : 90
                 _depth : 0
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "TR1181" #accelerometer
-                  - "E055" #digitizer
-                _equipment_description : 
-                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
-                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _equipment_serial : "TR1181/E055" #digitizer
+                _equipment_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_type : "RADIAN"
-                _sensor_description : "Güralp Radian/24-bit built-in digitiser"
+                _sensor_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_keys : "StationXMLInventory.KEMF.W1.CNE"
                 _datalogger_keys : "StationXMLInventory.KEMF.W1.CNE"
                 _dataSearchURL : "None"
@@ -769,22 +714,17 @@
                 _location_code : "W2"
                 _latitude : 47.949635
                 _longitude : -129.097900
-                _elevation : -2193 
+                _elevation : -2193.0 
                 _sample_rate : 500
                 _azimuth : 90
                 _depth : 0
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "TR1182" #accelerometer
-                  - "E055" #digitizer
-                _equipment_description : 
-                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
-                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _equipment_serial : "TR1182/E055" #digitizer
+                _equipment_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_type : "RADIAN"
-                _sensor_description : 
-                  - "Güralp Radian/24-bit built-in digitiser"
+                _sensor_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_keys : "StationXMLInventory.KEMF.W2.CNE"
                 _datalogger_keys : "StationXMLInventory.KEMF.W2.CNE"
                 _dataSearchURL : "None"
@@ -866,22 +806,17 @@
                 _location_code : "W3"
                 _latitude : 47.948912
                 _longitude : -129.098117
-                _elevation : -2192 
+                _elevation : -2192.0
                 _sample_rate : 500
                 _azimuth : 90
                 _depth : 0
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "TR1183" #accelerometer
-                  - "E055" #digitizer
-                _equipment_description : 
-                  - "Triaxial orthogonal broadband instrument with acceleration response flat between 120 seconds and 200 Hz, and an internal MEMS accelerometer and magnetometer."
-                  - 24-bit digitiser contained within the same robust 55 mm diameter stainless steel casing as triaxial seismometer.
+                _equipment_serial : "TR1183/E055" #digitizer
+                _equipment_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_type : "RADIAN"
-                _sensor_description : 
-                  - "Güralp Radian/24-bit built-in digitiser"
+                _sensor_description : "Guralp Maris Radian/24-bit built-in digitiser"
                 _sensor_keys : "StationXMLInventory.KEMF.W3.CNE"
                 _datalogger_keys : "StationXMLInventory.KEMF.W3.CNE"
                 _dataSearchURL : "None"
@@ -969,12 +904,8 @@
                 _depth : 0
                 _types :
                   - "GEOPHYSICAL"
-                _equipment_description :
-                  - "GeoSENSE BH-1-16 (S/N 116) Corehole Seismometer - Short Period Responsivitiy from 1 Hz to 200 Hz"
-                  - "Guralp DM24-MK3 Datalogger" 
-                _equipment_serial : 
-                  - "116" #S/N sensor
-                  - "A1350" #S/N datalogger
+                _equipment_description : "GeoSENSE BH-1 Corehole Seismometer/Guralp DM24-MK3 Datalogger" 
+                _equipment_serial : "116/A1350" #S/N datalogger
                 _sensor_keys : "KEMF.EHE.116"
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200" #same datalogger as for BBSs (e.g., NC89)
                 _sensor_type : "BH-1"
@@ -1023,12 +954,8 @@
                 <<: *KEMF_GEOSenseBH1_116
                 _azimuth : 310
                 _dip : 0
-                _equipment_description :
-                  - "GeoSENSE BH-1-17 (S/N 117) Corehole Seismometer - Short Period Responsivitiy from 1 Hz to 200 Hz"
-                  - "Guralp DM24-MK3 Datalogger" 
-                _equipment_serial : 
-                  - "117" #S/N sensor
-                  - "A1349" #S/N datalogger
+                _equipment_description : "GeoSENSE BH-1 Corehole Seismometer/Guralp DM24-MK3 Datalogger"
+                _equipment_serial : "117/A1349" #S/N datalogger
                 _sensor_keys : "KEMF.EHE.117"
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=16001"
 
@@ -1129,12 +1056,8 @@
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "T1079"
-                  - "A4274"
-                _equipment_description : 
-                  - "CMG-1T very Broadband Ocean Bottom Sensor with three independent sensors; 360 sec to 100 Hz response."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
+                _equipment_serial : "T1079/A4274"
+                _equipment_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_type : "CMG-1T"
                 _sensor_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_keys : "RESP.XX.NS004..BHZ.CMG1T.360.1500"
@@ -1153,26 +1076,26 @@
 
               "HNE" : 
                 <<: *KEMO_BBS_T1079
-                _equipment_serial : 
-                  - "T5CP4"
-                  - "A4274"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _equipment_serial : "T5CP4/A4274"
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
 
               "HNN" : 
                 <<: *KEMO_BBS_T1079
                 _azimuth : 0
-                _equipment_serial : 
-                  - "T5CP4"
-                  - "A4274"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _equipment_serial : "T5CP4/A4274"
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
 
               "HNZ" : 
                 <<: *KEMO_BBS_T1079
                 _azimuth : 0
                 _dip : -90
-                _equipment_serial : 
-                  - "T5CP4"
-                  - "A4274"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _equipment_serial : "T5CP4/A4274"
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
 
               "MHE" :
@@ -1198,9 +1121,9 @@
                 _sample_rate : 8
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
-                _equipment_serial : 
-                  - "T5CP4"
-                  - "A4274"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _equipment_serial : "T5CP4/A4274"
                 
               "MNN" :
                 <<: *KEMO_BBS_T1079
@@ -1208,9 +1131,9 @@
                 _azimuth : 0
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
-                _equipment_serial : 
-                  - "T5CP4"
-                  - "A4274"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _equipment_serial : "T5CP4/A4274"
 
               "MNZ" :
                 <<: *KEMO_BBS_T1079
@@ -1219,9 +1142,9 @@
                 _dip : -90
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
-                _equipment_serial : 
-                  - "T5CP4"
-                  - "A4274"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _equipment_serial : "T5CP4/A4274"
           
           "2016-06-18T00:00:00.000000Z_2018-12-31T23:59:59.000000Z" : 
             Channels :
@@ -1234,12 +1157,8 @@
                 _depth : 0
                 _types :
                   - "GEOPHYSICAL"
-                _equipment_description :
-                  - "GeoSENSE BH-1-15 (S/N 115) Corehole Seismometer - Short Period Responsivitiy from 1 Hz to 200 Hz"
-                  - "Guralp DM24-MK3 Datalogger" 
-                _equipment_serial : 
-                  - "115" #S/N sensor
-                  - "A1325" #S/N datalogger
+                _equipment_description : "GeoSENSE BH-1 Corehole Seismometer/Guralp DM24-MK3 Datalogger"
+                _equipment_serial : "115/A1325" #S/N datalogger
                 _sensor_keys : "KEMO.EHE.115"
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200" #same datalogger as for BBSs (e.g., NC89)
                 _sensor_type : "BH-1"
@@ -1287,11 +1206,10 @@
         _latitude : 47.762300
         _longitude : -127.757900
         _elevation : -2656.0 #meters
-        _site : "Cascadia Basin - Node ODP1026"
+        _site : "Cascadia Basin, West (ODP 1026)"
         _geology : ""
         _description : "Station NC27 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" :
-
 
           "2009-09-14T00:00:00.000000Z_2010-06-10T17:42:59.000000Z" :
             Channels : #100 and 2 Hz
@@ -1304,12 +1222,8 @@
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "T1067"
-                  - "A1716"
-                _equipment_description : 
-                  - "CMG-1T very Broadband Ocean Bottom Sensor with three independent sensors; 360 sec to 100 Hz response."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
+                _equipment_serial : "T1067/A1716"
+                _equipment_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_type : "CMG-1T"
                 _sensor_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_keys : "RESP.XX.NS004..BHZ.CMG1T.360.1500"
@@ -1342,12 +1256,9 @@
 
               "HNE" : &NC27_T5O77_E_ACC
                 <<: *NC27_T1067_E
-                _equipment_serial : 
-                  - "T5O77"
-                  - "A1716"
-                _equipment_description : 
-                  - "CMG-5T Strong motion sensor fixed within the same titanium housing as the Broadband Sensor."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
+                _equipment_serial : "T5O77/A1716"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
                 _sensor_type : "CMG-5T"
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
               
@@ -1442,12 +1353,8 @@
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "T1065"
-                  - "A2260"
-                _equipment_description : 
-                  - "CMG-1T very Broadband Ocean Bottom Sensor with three independent sensors; 360 sec to 100 Hz response."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
+                _equipment_serial : "T1065/A2260"
+                _equipment_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_type : "CMG-1T"
                 _sensor_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_keys : "RESP.XX.NS004..BHZ.CMG1T.360.1500"
@@ -1465,12 +1372,9 @@
 
               "HNE" : &NC27_T5S27_E_ACC
                 <<: *NC27_T1065_E
-                _equipment_serial : 
-                  - "T5S27"
-                  - "A2260"
-                _equipment_description : 
-                  - "CMG-5T Strong motion sensor fixed within the same titanium housing as the Broadband Sensor."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
+                _equipment_serial : "T5S27/A2260"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
                 _sensor_type : "CMG-5T"
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
 
@@ -1582,7 +1486,7 @@
                 <<: *NC27_T1067_E
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 200
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200"
                 _azimuth : 87
@@ -1591,7 +1495,7 @@
                 <<: *NC27_T1067_N
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 200
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200"
                 _azimuth : 357
@@ -1600,7 +1504,7 @@
                 <<: *NC27_T1067_Z
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 200
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200"
                 _azimuth : 357
@@ -1609,7 +1513,7 @@
                 <<: *NC27_T5O77_E_ACC
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 200
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200"
                 _azimuth : 87
@@ -1618,7 +1522,7 @@
                 <<: *NC27_T5O77_N_ACC
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 200
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200"
                 _azimuth : 357
@@ -1627,7 +1531,7 @@
                 <<: *NC27_T5O77_Z_ACC
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 200
                 _datalogger_keys : "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200"
                 _azimuth : 357
@@ -1636,7 +1540,7 @@
                 <<: *NC27_T1067_E
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 8
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
                 _azimuth : 87
@@ -1645,7 +1549,7 @@
                 <<: *NC27_T1067_N
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 8
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
                 _azimuth : 357
@@ -1654,7 +1558,7 @@
                 <<: *NC27_T1067_Z
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 8
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
                 _azimuth : 357
@@ -1663,7 +1567,7 @@
                 <<: *NC27_T5O77_E_ACC
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 8
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
                 _azimuth : 87
@@ -1672,7 +1576,7 @@
                 <<: *NC27_T5O77_N_ACC
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 8
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
                 _azimuth : 357
@@ -1681,7 +1585,7 @@
                 <<: *NC27_T5O77_Z_ACC
                 _latitude : 47.76258
                 _longitude : -127.758102
-                _elevation : -2656
+                _elevation : -2656.0
                 _sample_rate : 8
                 _datalogger_keys : "RESP.XX.G0190..MHZ.CMG_DM24_MK3_FIX_38.1.1000_200_40.8"
                 _azimuth : 357
@@ -1692,8 +1596,8 @@
         To : "None"
         _latitude : 47.756717
         _longitude : -127.731602
-        _elevation : -2656
-        _site : "Cascadia Basin - Node ODP1027C"
+        _elevation : -2656.0
+        _site : "Cascadia Basin, East (ODP 1027C)"
         _geology : ""
         _description : "Station CBC27 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : 
@@ -1712,12 +1616,8 @@
                 _sample_rate : 200
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "Nanometrics TitanEA (S/N 000788) deployed at the Cascadia Basin CORK 1027 site."
-                  - "The dataloggers in the Titan SMA digital accelerometers are Centaur dataloggers with a single preamp gain choice of 1 (40 Vpp)."
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "000788"
-                  - "788"
+                _equipment_description : "Nanometrics TitanEA Accelerograph 2g/Built-in datalogger"
+                _equipment_serial : "000788/788" #sensor, datalogger (digitiser)
                 _sensor_keys : "RESP.XX.NS128..BNZ.Titan.DC_430.20V.2G" 
                 _datalogger_keys : "RESP.XX.NN429..HHZ.CENTAUR.1.200.OFF"
                 _sensor_type : "TitanEA3_5"
@@ -1741,16 +1641,12 @@
                 _sample_rate : 20
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : 
-                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
-                  - "Internal logger with 50 ms timestamp resolution"
-                _equipment_serial : 
-                  - "APT57"
-                  - "LOG57"
+                _equipment_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : "APT57/LOG57"
                 _sensor_keys : "NV.CBC27.Z1.BNE"
                 _datalogger_keys : "NV.CBC27.Z1.BNE" 
                 _sensor_type : "APT"
-                _sensor_description : "RBR Concerto APT" 
+                _sensor_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
                 _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=CBC27&deviceCategory=TILTMTR"
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24155"
                 _calibration_units : "UNKNOWN"
@@ -1776,7 +1672,7 @@
 
               "BKP" : &APT57_Temperature_HighRate
                 <<: *APT57_Pressure_HighRate
-                _depth : -1 #m
+                _depth : 1.0 #m
                 _sensor_keys : "NV.CBC27.Z1.BKP"
                 _datalogger_keys : "NV.CBC27.Z1.BKP"
 
@@ -1800,16 +1696,12 @@
                 _sample_rate : 5
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : 
-                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
-                  - "Internal logger with 50 ms timestamp resolution"
-                _equipment_serial : 
-                  - "APT57"
-                  - "LOG57"
+                _equipment_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : "APT57/LOG57"
                 _sensor_keys : "NV.CBC27.Z1.MNE"
                 _datalogger_keys : "NV.CBC27.Z1.MNE" 
                 _sensor_type : "APT"
-                _sensor_description : "RBR Concerto APT" 
+                _sensor_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
                 _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=CBC27&deviceCategory=TILTMTR"
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24155"
                 _calibration_units : "UNKNOWN"
@@ -1856,7 +1748,7 @@
         _latitude : 48.670537
         _longitude : -126.848767
         _elevation : -1258.0 #meters
-        _site : "Clayoquot Slope - Bullseye (Node ODP1089)"
+        _site : "Clayoquot Slope, Bullseye (ODP 1089)"
         _geology : "Accreted sediments, superimposed slope deposits, and a ubiquitous gas-hydrate bottom-simulating reflector."
         _description : "Station NC89 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : #The time interval of instrument settings
@@ -1867,7 +1759,7 @@
               "BNE" : &APT55_ACC_HighRate
                 _latitude : 48.6709
                 _longitude : -126.8481
-                _elevation : -1283
+                _elevation : -1283.0
                 _location_code : "Z1"
                 _azimuth : 90
                 _dip : 0
@@ -1875,16 +1767,12 @@
                 _sample_rate : 20
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : 
-                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
-                  - "Internal logger with 50 ms timestamp resolution"
-                _equipment_serial : 
-                  - "APT55"
-                  - "LOG55"
+                _equipment_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : "APT55/LOG55"
                 _sensor_keys : "NV.NC89.Z1.BNE"
                 _datalogger_keys : "NV.NC89.Z1.BNE" 
                 _sensor_type : "APT"
-                _sensor_description : "RBR Concerto APT" 
+                _sensor_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
                 _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=NC89&deviceCategory=TILTMTR"
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24150"
                 _calibration_units : "UNKNOWN"
@@ -1912,7 +1800,7 @@
               # pressure temperature (-1 depth)
               "BKP" : &APT55_Temperature_HighRate
                 <<: *APT55_Pressure_HighRate
-                _depth : -1 #m
+                _depth : 1.0 #m
                 _sensor_keys : "NV.NC89.Z1.BKP"
                 _datalogger_keys : "NV.NC89.Z1.BKP"
 
@@ -1934,7 +1822,7 @@
               "MNE" : &APT55_ACC_LowRate
                 _latitude : 48.6709
                 _longitude : -126.8481
-                _elevation : -1283
+                _elevation : -1283.0
                 _location_code : "Z1"
                 _azimuth : 90
                 _dip : 0
@@ -1942,16 +1830,12 @@
                 _sample_rate : 5
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : 
-                  - "RBR Concerto APT is a deep water high resolution bottom pressure recorder and triaxial accelerometer"
-                  - "Internal logger with 50 ms timestamp resolution"
-                _equipment_serial : 
-                  - "APT55"
-                  - "LOG55"
+                _equipment_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
+                _equipment_serial : "APT55/LOG55"
                 _sensor_keys : "NV.NC89.Z1.MNE"
                 _datalogger_keys : "NV.NC89.Z1.MNE" 
                 _sensor_type : "APT"
-                _sensor_description : "RBR Concerto APT" 
+                _sensor_description : "RBR Concerto APT/Internal logger with 50 ms timestamp resolution"
                 _dataSearchURL : "https://data.oceannetworks.ca/DataSearch?location=NC89&deviceCategory=TILTMTR"
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=24150"
                 _calibration_units : "UNKNOWN"
@@ -2007,12 +1891,8 @@
                 _elevation : -1259.0 #meters
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : &NC89_TitanEA_equipment #order should be: [sensor, data_logger]
-                  - "Nanometrics TitanEA (S/N 000647) is installed at Clayoquot Slope at the Bullseye stationary platform."
-                  - "The dataloggers in the Titan SMA digital accelerometers are Centaur dataloggers with a single preamp gain choice of 1 (40 Vpp)."
-                _equipment_serial : &NC89Bullseye_TitanEA_serials #must be same length as description; order should be: [sensor, data_logger]
-                  - "000647"
-                  - "647"
+                _equipment_description : &NC89_TitanEA_equipment "Nanometrics TitanEA Accelerograph 2g/Built-in datalogger"
+                _equipment_serial : &NC89Bullseye_TitanEA_serials "000647/647"
                 _dataSearchURL : &NC89_TitanEA_dataSearchURL "http://data.oceannetworks.ca/DataSearch?location=NC89&deviceCategory=ACCELEROMETER"
                 _deviceURL : &NC89_TitanEA_deviceURL "http://data.oceannetworks.ca/DeviceListing?DeviceId=24075"
                 _calibration_units : "UNKNOWN"
@@ -2031,19 +1911,15 @@
                 _location_code : ""
                 _latitude : 48.6705366667
                 _longitude : -126.8487666667
-                _elevation : -1256
+                _elevation : -1256.0
                 _azimuth : 102
                 _dip : 0
                 _depth : 0
                 _sample_rate : 200
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : &CMG-1T_description #order should be: [sensor, data_logger]
-                  - "CMG-1T very Broadband Ocean Bottom Sensor with three independent sensors; 360 sec to 100 Hz response."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
-                _equipment_serial : &CMG-1T_serials #must be same length as description; order should be: [sensor, data_logger]
-                  - "T1063"
-                  - "A1717"
+                _equipment_description : &CMG-1T_description "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
+                _equipment_serial : &CMG-1T_serials "T1063/A1717"
                 _sensor_keys : &CMG-1T_sensorKeys "RESP.XX.NS004..BHZ.CMG1T.360.1500"
                 _datalogger_keys : &CMG-1T_200sps_dataloggerKeys "RESP.XX.G0148..HHZ.CMG_DM24_MK3_FIX_38.1.1000.200"
                 _sensor_type : "CMG-1T"
@@ -2080,12 +1956,8 @@
                 _sample_rate : 200
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : &CMG-5T_description #order should be: [sensor, data_logger]
-                  - "CMG-5T Strong motion sensor fixed within the same titanium housing as the Broadband Sensor."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
-                _equipment_serial : &CMG-5T_serials #must be same length as description; order should be: [sensor, data_logger]
-                  - "T5O75"
-                  - "A1717"
+                _equipment_description : &CMG-5T_description "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _equipment_serial : &CMG-5T_serials "T5O75/A1717"
                 _sensor_keys : &CMG-5T_sensorKeys "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
                 _datalogger_keys : *CMG-1T_200sps_dataloggerKeys #200 sps
                 _sensor_type : "CMG-5T"
@@ -2230,19 +2102,15 @@
                 _location_code : "W1"
                 _latitude : 48.42661
                 _longitude : -126.174726
-                _elevation : 392
+                _elevation : 392.0
                 _azimuth : 90
                 _dip : 0
                 _depth : 0
                 _sample_rate : 200
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "Nanometrics TitanEA (S/N 000788) deployed at the Barkley Upper Slope site."
-                  - "The dataloggers in the Titan SMA digital accelerometers are Centaur dataloggers with a single preamp gain choice of 1 (40 Vpp)."
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "000646"
-                  - "646"
+                _equipment_description : "Nanometrics TitanEA Accelerograph 2g/Built-in datalogger"
+                _equipment_serial : "000646/646"
                 _sensor_keys : "RESP.XX.NS128..BNZ.Titan.DC_430.20V.2G" 
                 _datalogger_keys : "RESP.XX.NN429..HHZ.CENTAUR.1.200.OFF"
                 _sensor_type : "TitanEA3_5"
@@ -2269,12 +2137,8 @@
                 _dip : 0
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_serial : 
-                  - "T1064"
-                  - "A1719"
-                _equipment_description : 
-                  - "CMG-1T very Broadband Ocean Bottom Sensor with three independent sensors; 360 sec to 100 Hz response."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
+                _equipment_serial : "T1064/A1719"
+                _equipment_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_type : "CMG-1T"
                 _sensor_description : "Guralp CMG-1T 360s/Guralp CMG-DM24 Datalogger"
                 _sensor_keys : "RESP.XX.NS004..BHZ.CMG1T.360.1500"
@@ -2307,12 +2171,9 @@
 
               "HNE" : &NCBC_T1064_E_ACC
                 <<: *NCBC_T1064_E
-                _equipment_serial : 
-                  - "T5O76"
-                  - "A1719"
-                _equipment_description : 
-                  - "CMG-5T Strong motion sensor fixed within the same titanium housing as the Broadband Sensor."
-                  - "CMG-DM24/7 7 channel, 24bit Digitiser."
+                _equipment_serial : "T5O76/A1719"
+                _sensor_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
+                _equipment_description : "Guralp CMG-5T 4g/Guralp CMG-DM24 Datalogger"
                 _sensor_type : "CMG-5T"
                 _sensor_keys : "RESP.XX.NS049..BNZ.CMG5T.DC_100.4G_10V"
               
@@ -2465,7 +2326,7 @@
         _latitude : 47.973752
         _longitude : -129.08209
         _elevation : -2152.0 #meters
-        _site : "High Rise"
+        _site : "High Rise Field"
         _geology : ""
         _description : "Station NCHR is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
         "Epoch" : 
@@ -2531,12 +2392,7 @@
                 _azimuth : 199
                 _sensor_keys : "NCHR.EHE.118"
                 _datalogger_keys : "RESP.XX.G0150..HHZ.CMG_DM24_MK3_FIX_49.1.500.100"
-                _equipment_description :
-                  - "GeoSENSE BH-1-18 (S/N 118) Corehole Seismometer - Short Period Responsivitiy from 1 Hz to 200 Hz"
-                  - "Guralp DM24-MK3 Datalogger" 
-                _equipment_serial : 
-                  - "118" #S/N sensor
-                  - "A1352" #S/N datalogger
+                _equipment_serial : "118/A1352" #S/N datalogger
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=13057"
 
               "EHN" : 
@@ -2583,12 +2439,7 @@
                 _azimuth : 200.5
                 _sensor_keys : "KEMF.EHE.116"
                 _datalogger_keys : "RESP.XX.G0150..HHZ.CMG_DM24_MK3_FIX_49.1.500.100"
-                _equipment_description :
-                  - "GeoSENSE BH-1-16 (S/N 116) Corehole Seismometer - Short Period Responsivitiy from 1 Hz to 200 Hz"
-                  - "Guralp DM24-MK3 Datalogger" 
-                _equipment_serial : 
-                  - "116" #S/N sensor
-                  - "A1350" #S/N datalogger
+                _equipment_serial : "116/A1350" #S/N datalogger
                 _deviceURL : "https://data.oceannetworks.ca/DeviceListing?DeviceId=11157"
 
               "EHN" : 
@@ -2631,7 +2482,7 @@
         To : "None"
         _latitude : 48.648681
         _longitude : -123.446181
-        _elevation : -8 #meters
+        _elevation : -8.0 #meters
         _site : "North Saanich Marine Technology Centre"
         _geology : "Granite"
         _description : "Station NSMTC is located at the Marine Technology Centre in North Saanich, owned and operated by Ocean Networks Canada.
@@ -2648,20 +2499,16 @@
                 _location_code : "G1"
                 _azimuth : 90
                 _dip : 0
-                _depth : -0.6096 #meters
+                _depth : 0.6 #meters
                 _sample_rate : 500
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "OYO Geospace HS-1-LT Geophone, 2Hz, 3810ohm coil, 78.7 V/m/sec recorded on REF TEK 130-01/6 Datalogger."
-                  - "REF TEK datalogger"
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "480-00010-01" #part number from Geospace
-                  - "ABA1"
+                _equipment_description : "OYO Geospace HS-1-LT Geophone/Ref Tek 130-01-6 Datalogger"
+                _equipment_serial : "480-00010-01/ABA1"
                 _sensor_keys : "RESP.XX.NS520..SLZ.HS1LT.3810.NONE.2.78_7"
                 _datalogger_keys : &NSRT_1_dataloggerKeys "RESP.XX.NR012..HHZ.RT130.1.500" #Unity Gain for surface reftek
                 _sensor_type : "HS1LT"
-                _sensor_description : "OYO Geospace HS-1-LT Geophone/Ref Tek 130-01/6 Datalogger"
+                _sensor_description : "OYO Geospace HS-1-LT Geophone/Ref Tek 130-01-6 Datalogger"
                 _dataSearchURL : "http://data.oceannetworks.ca/DataSearch?location=NSMTC.G1"
                 _deviceURL : "http://data.oceannetworks.ca/DeviceListing?DeviceId=22936"
                 _calibration_units : "UNKNOWN"
@@ -2680,20 +2527,16 @@
                 _location_code : "B1"
                 _azimuth : 146
                 _dip : 0
-                _depth : -243.84 #meters
+                _depth : 243.8 #meters
                 _sample_rate :  500
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "Silicon Audio Ultra Low Noise Seismometer SN 0536. This seismometer collects data from 243.84 metres below the earth surface."
-                  - "REF TEK datalogger"
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "0536_40Vpg" #device code from WebServices API Oceans 2.0
-                  - "AAB9"
+                _equipment_description : "Silicon Audio Ultra-Low-Noise Optical Accelerometer/Ref Tek 130-01-6 Datalogger"
+                _equipment_serial : "0536_40Vpg/AAB9"
                 _sensor_keys : &NS_SA_sensorKeys "RESP.XX.NS516..BNZ.SAULowNoise.0_005_1000.60_5V.0_5G" #Silicon Audio
                 _datalogger_keys : *NSRT_1_dataloggerKeys
                 _sensor_type : "SA_ULN"
-                _sensor_description : "Silicon Audio Ultra-Low-Noise Optical Accelerometer/Ref Tek 130-01/6 Datalogger"
+                _sensor_description : "Silicon Audio Ultra-Low-Noise Optical Accelerometer/Ref Tek 130-01-6 Datalogger"
                 _dataSearchURL : "http://data.oceannetworks.ca/DataSearch?location=NSMTC.B1"
                 _deviceURL : "http://data.oceannetworks.ca/DeviceListing?DeviceId=24046"
                 _calibration_units : "UNKNOWN"
@@ -2709,13 +2552,8 @@
                 <<: *NSMTC_SA_ULN_Channel 
                 _location_code : "B2"
                 _azimuth : 34
-                _depth : -274.32 #meters
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "Silicon Audio Ultra Low Noise Seismometer SN 0537. This seismometer collects data from 274.32 metres below the earth surface."
-                  - "REF TEK datalogger"
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "0537_40Vpg" #device code from WebServices API Oceans 2.0
-                  - "ABB3"
+                _depth : 274.3 #meters
+                _equipment_serial : "0537_40Vpg/ABB3"
                 _dataSearchURL : "http://data.oceannetworks.ca/DataSearch?location=NSMTC.B2"
                 _deviceURL : "http://data.oceannetworks.ca/DeviceListing?DeviceId=24203"
               "CN1-2" :
@@ -2730,13 +2568,8 @@
                 <<: *NSMTC_SA_ULN_Channel 
                 _location_code : "B3"
                 _azimuth : 174
-                _depth : -304.8 #meters
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "Silicon Audio Ultra Low Noise Seismometer SN 0539. This seismometer collects data from 304.8 metres below the earth surface."
-                  - "REF TEK datalogger"
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "0539_40Vpg" #device code from WebServices API Oceans 2.0
-                  - "B2A2"
+                _depth : 304.8 #meters
+                _equipment_serial : "0539_40Vpg/B2A2"
                 _dataSearchURL : "http://data.oceannetworks.ca/DataSearch?location=NSMTC.B3"
                 _deviceURL : "http://data.oceannetworks.ca/DeviceListing?DeviceId=24202"
               "CN1-3" :
@@ -2751,20 +2584,16 @@
                 _location_code : "G2"
                 _azimuth : 57
                 _dip : 0
-                _depth : -307.848 #meters
+                _depth : 307.8 #meters
                 _sample_rate : 500
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "OYO Geospace GS-11D geophone mounted in a custom LBNL borehole sonde, 8Hz, 4000ohm coil, 100 V/m/sec, recorded on REF TEK 130-01/6 Datalogger."
-                  - "REF TEK datalogger"
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "93666" #part number from Geospace
-                  - "B2A2"
+                _equipment_description : "Geospace GS-11D-3C Geophone/Ref Tek 130-01-6 Datalogger"
+                _equipment_serial : "93666/B2A2"
                 _sensor_keys : "RESP.XX.NS518..SHZ.GS11D.8.4000.18000.81_8"
                 _datalogger_keys : *NSRT_1_dataloggerKeys
                 _sensor_type : "GS11D"
-                _sensor_description : "Geospace GS-11D-3C Geophone/Ref Tek 130-01/6 Datalogger"
+                _sensor_description : "Geospace GS-11D-3C Geophone/Ref Tek 130-01-6 Datalogger"
                 _dataSearchURL : "http://data.oceannetworks.ca/DataSearch?location=NSMTC.G2"
                 _deviceURL : "http://data.oceannetworks.ca/DeviceListing?DeviceId=22935"
                 _calibration_units : "UNKNOWN"
@@ -2782,9 +2611,7 @@
 
               "CN2-1" : 
                 <<: *NSMTC_SA_ULN_Channel
-                _equipment_serial : &SA_B1_ULN_60Vpg_serials
-                  - "0536" 
-                  - "AAB9"
+                _equipment_serial : &SA_B1_ULN_60Vpg_serials "0536/AAB9"
                 _datalogger_keys : &NSRT_32_dataloggerKeys "RESP.XX.NR012..HHZ.RT130.32.500" #Unity Gain for surface reftek
               "CN1-1" :
                 <<: *NSMTC_SA_ULN_Channel
@@ -2800,9 +2627,7 @@
 
               "CN2-2" : 
                 <<: *NSMTC_SA_ULN_Channel_B2
-                _equipment_serial : &SA_B2_ULN_60Vpg_serials
-                  - "0537" 
-                  - "ABB3"
+                _equipment_serial : &SA_B2_ULN_60Vpg_serials "0537/ABB3"
                 _datalogger_keys : *NSRT_32_dataloggerKeys
               "CN1-2" :
                 <<: *NSMTC_SA_ULN_Channel_B2
@@ -2819,9 +2644,7 @@
               "CN2-3" : 
                 <<: *NSMTC_SA_ULN_Channel_B3
                 _datalogger_keys : *NSRT_32_dataloggerKeys
-                _equipment_serial : &SA_B3_ULN_60Vpg_serials
-                  - "0539" 
-                  - "B2A2"
+                _equipment_serial : &SA_B3_ULN_60Vpg_serials "0539/B2A2"
               "CN1-3" :
                 <<: *NSMTC_SA_ULN_Channel_B3
                 _azimuth : 84
@@ -3020,12 +2843,8 @@
                 _sample_rate : 200
                 _types : 
                   - "GEOPHYSICAL"
-                _equipment_description : #order should be: [sensor, data_logger]
-                  - "Nanometrics TitanEA (S/N 000143) is installed at Barkley Canyon Mid East."
-                  - "The dataloggers in the Titan SMA digital accelerometers are Centaur dataloggers with a single preamp gain choice of 1 (40 Vpp)."
-                _equipment_serial : #must be same length as description; order should be: [sensor, data_logger]
-                  - "000143"
-                  - "143"
+                _equipment_description : "Nanometrics TitanEA Accelerograph 2g/Built-in datalogger"
+                _equipment_serial : "000143/143"
                 _sensor_keys : *TitanEA_sensorKeys
                 _datalogger_keys : *TitanEA_dataloggerKeys
                 _sensor_type : "TitanEA3_5"
