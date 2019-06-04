@@ -1,0 +1,853 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.0">
+  <Source>Joseph Farrugia, Ocean Networks Canada</Source>
+  <Module>ObsPy 1.1.1</Module>
+  <ModuleURI>https://www.obspy.org</ModuleURI>
+  <Created>2019-06-04T12:32:25.477122Z</Created>
+  <Network code="NV" startDate="2009-01-01T00:00:00.000000Z">
+    <Description>NEPTUNE seismic network, owned and operatred by Ocean Networks Canada (ONC), an initiative of the University of Victoria (UVic).</Description>
+    <Station code="BACND" startDate="2018-06-22T03:00:00.000000Z">
+      <Description>Station BACND is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada.</Description>
+      <Latitude unit="DEGREES">48.34594</Latitude>
+      <Longitude unit="DEGREES">-126.158</Longitude>
+      <Elevation unit="METERS">-643.3</Elevation>
+      <Site>
+        <Name>Barkley Canyon Node</Name>
+      </Site>
+      <Geology></Geology>
+      <CreationDate>2018-06-22T03:00:00.000000Z</CreationDate>
+      <Channel code="AED" locationCode="Z1" startDate="2018-06-22T03:00:00.000000Z">
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DataSearch?location=BACND&amp;deviceCategory=TILTMTR</URI>
+          <Description>Data Search URL.</Description>
+        </ExternalReference>
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DeviceListing?DeviceId=24154</URI>
+          <Description>Device URL.</Description>
+        </ExternalReference>
+        <Latitude unit="DEGREES">48.34594</Latitude>
+        <Longitude unit="DEGREES">-126.158</Longitude>
+        <Elevation unit="METERS">-643.3</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate>0.0</SampleRate>
+        <Sensor>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT56/LOG56</SerialNumber>
+        </Sensor>
+        <Equipment>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT56/LOG56</SerialNumber>
+        </Equipment>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">40.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="AHD" locationCode="Z1" startDate="2018-06-22T03:00:00.000000Z">
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DataSearch?location=BACND&amp;deviceCategory=TILTMTR</URI>
+          <Description>Data Search URL.</Description>
+        </ExternalReference>
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DeviceListing?DeviceId=24154</URI>
+          <Description>Device URL.</Description>
+        </ExternalReference>
+        <Latitude unit="DEGREES">48.34594</Latitude>
+        <Longitude unit="DEGREES">-126.158</Longitude>
+        <Elevation unit="METERS">-643.3</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate>20.0</SampleRate>
+        <Sensor>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT56/LOG56</SerialNumber>
+        </Sensor>
+        <Equipment>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT56/LOG56</SerialNumber>
+        </Equipment>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">40.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="ALD" locationCode="Z1" startDate="2018-06-22T03:00:00.000000Z">
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DataSearch?location=BACND&amp;deviceCategory=TILTMTR</URI>
+          <Description>Data Search URL.</Description>
+        </ExternalReference>
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DeviceListing?DeviceId=24154</URI>
+          <Description>Device URL.</Description>
+        </ExternalReference>
+        <Latitude unit="DEGREES">48.34594</Latitude>
+        <Longitude unit="DEGREES">-126.158</Longitude>
+        <Elevation unit="METERS">-643.3</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate>5.0</SampleRate>
+        <Sensor>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT56/LOG56</SerialNumber>
+        </Sensor>
+        <Equipment>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT56/LOG56</SerialNumber>
+        </Equipment>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">40.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="CBC27" startDate="2018-06-23T23:59:59.000000Z">
+      <Description>Station CBC27 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada.</Description>
+      <Latitude unit="DEGREES">47.756717</Latitude>
+      <Longitude unit="DEGREES">-127.731602</Longitude>
+      <Elevation unit="METERS">-2656.0</Elevation>
+      <Site>
+        <Name>Cascadia Basin, East (ODP 1027C)</Name>
+      </Site>
+      <Geology></Geology>
+      <CreationDate>2018-06-23T23:59:59.000000Z</CreationDate>
+      <Channel code="AED" locationCode="Z1" startDate="2018-06-24T00:00:00.000000Z">
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DataSearch?location=CBC27&amp;deviceCategory=TILTMTR</URI>
+          <Description>Data Search URL.</Description>
+        </ExternalReference>
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DeviceListing?DeviceId=24155</URI>
+          <Description>Device URL.</Description>
+        </ExternalReference>
+        <Latitude unit="DEGREES">47.756717</Latitude>
+        <Longitude unit="DEGREES">-127.731602</Longitude>
+        <Elevation unit="METERS">-2656.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate>0.0</SampleRate>
+        <Sensor>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT57/LOG57</SerialNumber>
+        </Sensor>
+        <Equipment>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT57/LOG57</SerialNumber>
+        </Equipment>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">40.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="AHD" locationCode="Z1" startDate="2018-06-24T00:00:00.000000Z">
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DataSearch?location=CBC27&amp;deviceCategory=TILTMTR</URI>
+          <Description>Data Search URL.</Description>
+        </ExternalReference>
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DeviceListing?DeviceId=24155</URI>
+          <Description>Device URL.</Description>
+        </ExternalReference>
+        <Latitude unit="DEGREES">47.756717</Latitude>
+        <Longitude unit="DEGREES">-127.731602</Longitude>
+        <Elevation unit="METERS">-2656.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate>20.0</SampleRate>
+        <Sensor>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT57/LOG57</SerialNumber>
+        </Sensor>
+        <Equipment>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT57/LOG57</SerialNumber>
+        </Equipment>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">40.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="ALD" locationCode="Z1" startDate="2018-06-24T00:00:00.000000Z">
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DataSearch?location=CBC27&amp;deviceCategory=TILTMTR</URI>
+          <Description>Data Search URL.</Description>
+        </ExternalReference>
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DeviceListing?DeviceId=24155</URI>
+          <Description>Device URL.</Description>
+        </ExternalReference>
+        <Latitude unit="DEGREES">47.756717</Latitude>
+        <Longitude unit="DEGREES">-127.731602</Longitude>
+        <Elevation unit="METERS">-2656.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate>5.0</SampleRate>
+        <Sensor>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT57/LOG57</SerialNumber>
+        </Sensor>
+        <Equipment>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT57/LOG57</SerialNumber>
+        </Equipment>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">40.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="NC89" startDate="2009-09-17T00:00:00.000000Z">
+      <Description>Station NC89 is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada.</Description>
+      <Latitude unit="DEGREES">48.670537</Latitude>
+      <Longitude unit="DEGREES">-126.848767</Longitude>
+      <Elevation unit="METERS">-1258.0</Elevation>
+      <Site>
+        <Name>Clayoquot Slope, Bullseye (ODP 1089)</Name>
+      </Site>
+      <Geology>Accreted sediments, superimposed slope deposits, and a ubiquitous gas-hydrate bottom-simulating reflector.</Geology>
+      <CreationDate>2009-09-17T00:00:00.000000Z</CreationDate>
+      <Channel code="AED" locationCode="Z1" startDate="2017-06-14T00:00:00.000000Z">
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DataSearch?location=NC89&amp;deviceCategory=TILTMTR</URI>
+          <Description>Data Search URL.</Description>
+        </ExternalReference>
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DeviceListing?DeviceId=24150</URI>
+          <Description>Device URL.</Description>
+        </ExternalReference>
+        <Latitude unit="DEGREES">48.670537</Latitude>
+        <Longitude unit="DEGREES">-126.848767</Longitude>
+        <Elevation unit="METERS">-1258.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate>0.0</SampleRate>
+        <Sensor>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT55/LOG55</SerialNumber>
+        </Sensor>
+        <Equipment>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT55/LOG55</SerialNumber>
+        </Equipment>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">40.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="AHD" locationCode="Z1" startDate="2017-06-14T00:00:00.000000Z">
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DataSearch?location=NC89&amp;deviceCategory=TILTMTR</URI>
+          <Description>Data Search URL.</Description>
+        </ExternalReference>
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DeviceListing?DeviceId=24150</URI>
+          <Description>Device URL.</Description>
+        </ExternalReference>
+        <Latitude unit="DEGREES">48.670537</Latitude>
+        <Longitude unit="DEGREES">-126.848767</Longitude>
+        <Elevation unit="METERS">-1258.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate>20.0</SampleRate>
+        <Sensor>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT55/LOG55</SerialNumber>
+        </Sensor>
+        <Equipment>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT55/LOG55</SerialNumber>
+        </Equipment>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">40.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="ALD" locationCode="Z1" startDate="2017-06-14T00:00:00.000000Z">
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DataSearch?location=NC89&amp;deviceCategory=TILTMTR</URI>
+          <Description>Data Search URL.</Description>
+        </ExternalReference>
+        <ExternalReference>
+          <URI>https://data.oceannetworks.ca/DeviceListing?DeviceId=24150</URI>
+          <Description>Device URL.</Description>
+        </ExternalReference>
+        <Latitude unit="DEGREES">48.670537</Latitude>
+        <Longitude unit="DEGREES">-126.848767</Longitude>
+        <Elevation unit="METERS">-1258.0</Elevation>
+        <Depth unit="METERS">0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate>5.0</SampleRate>
+        <Sensor>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT55/LOG55</SerialNumber>
+        </Sensor>
+        <Equipment>
+          <Description>RBR Concerto APT/Internal logger with 50 ms timestamp resolution</Description>
+          <SerialNumber>APT55/LOG55</SerialNumber>
+        </Equipment>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>1.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+            </PolesZeros>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>counts</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+              <Numerator>1.0</Numerator>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">40.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
