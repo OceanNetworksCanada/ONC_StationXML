@@ -496,9 +496,9 @@
       "ENEF" : 
         From : "2018-06-19T00:00:00.000000Z"
         To : "None"
-        _latitude : 47.959766
-        _longitude : -129.124479
-        _elevation : -2361.0 #meters
+        _latitude : 47.958635
+        _longitude : -129.035485
+        _elevation : -2325 #meters
         _site : "Endeavour East Flank"
         _geology : ""
         _description : "Station ENEF is part of the Neptune ocean-floor cabled observatory in the northeast Pacific Ocean, owned and operated by Ocean Networks Canada."
